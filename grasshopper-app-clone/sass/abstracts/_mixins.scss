@@ -1,0 +1,26 @@
+/*
+  MEDIA QUERY SIZES
+  =================
+* FROM 720 => sm
+* FROM 1024 => md
+* Normal Styles Applies For All
+*/
+
+@mixin respond($breakpoint) {
+  // Guard Clause
+  @if $breakpoint != sm and $breakpoint != md {
+    @error '$breakpoint should be either sm, md';
+  }
+
+  @if $breakpoint == sm {
+    @media only screen and (min-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media only screen and (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+}

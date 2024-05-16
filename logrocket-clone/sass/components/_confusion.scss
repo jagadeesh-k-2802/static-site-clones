@@ -1,0 +1,24 @@
+.confusion-section {
+  background-color: #f7f9fb;
+  color: $font-color;
+  border-bottom: $section-end-border;
+  padding: 8rem $padding-horizontal;
+
+  display: flex;
+  align-items: center;
+
+  &__text {
+    .text__heading {
+      @include logrocket-museo-sans(300);
+      font-size: 3.2rem;
+      line-height: 5.6rem;
+      margin-right: 5rem;
+    }
+  }
+
+  &__image {
+    img {
+      width: 63rem;
+    }
+  }
+}

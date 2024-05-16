@@ -1,0 +1,24 @@
+// COVID ALERT
+
+.covid-alert {
+  margin: 0 8rem;
+  padding: 1.2rem 3.6rem;
+  background-color: #0067b8;
+  cursor: pointer;
+
+  &__para {
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+
+    @include animate-chevron;
+  }
+
+  &:hover {
+    .covid-alert__para {
+      text-decoration: underline;
+    }
+
+    outline: 1px dashed #000;
+  }
+}

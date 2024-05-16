@@ -1,0 +1,19 @@
+@mixin logrocket-avenir($weight) {
+  font-family: 'LOGROCKET_AVENIR', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin logrocket-museo-sans($weight) {
+  font-family: 'LOGROCKET_MUSEO_SANS', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin freight-sans($weight) {
+  font-family: 'Freight Sans', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}
+
+@mixin source-code-pro($weight) {
+  font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+  font-weight: $weight;
+}

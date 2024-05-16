@@ -1,0 +1,56 @@
+// Conect Tools
+
+.connect-tools {
+  padding: $padding-horizontal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    text-align: center;
+  }
+
+  &__image {
+    z-index: -5;
+
+    img {
+      width: 80rem;
+      margin-top: -3.3rem;
+    }
+  }
+
+  .text__heading {
+    color: $navy-blue;
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .text__description {
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: $navy-blue-light;
+    margin-bottom: 2.6rem;
+
+    padding: 0rem 23rem;
+    line-height: 3rem;
+  }
+
+  .text__link {
+    font-weight: 500;
+    color: $primary-color;
+    font-size: 1.6rem;
+
+    svg {
+      transition: transform 250ms;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}

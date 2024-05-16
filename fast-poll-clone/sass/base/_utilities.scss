@@ -1,0 +1,45 @@
+/* === UTILITY CLASSES === */
+.new-badge {
+  background-color: $orange-color;
+  border-radius: 3px;
+  padding: 2.5px 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 8px;
+  letter-spacing: -0.15px;
+  font-weight: 700;
+  margin: 0 5px;
+}
+
+.primary {
+  color: $green-color;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* === UTILITY CLASSES === */
+$spaces: 5, 10;
+
+@each $space in $spaces {
+  .mt-#{$space} {
+    margin-top: $space + 0rem;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: $space + 0rem;
+  }
+
+  .mtb-#{$space} {
+    margin: $space + 0rem 0;
+  }
+
+  .pt-#{$space} {
+    padding-top: $space + 0rem;
+  }
+
+  .ptb-#{$space} {
+    padding: $space + 0rem 0;
+  }
+}

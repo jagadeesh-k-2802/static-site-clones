@@ -1,0 +1,13 @@
+.btn {
+  border: 0;
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 15px 50px;
+  font-size: 1.7rem;
+  font-weight: 500;
+
+  &--primary {
+    background-color: #45c14e;
+    color: #fff;
+  }
+}

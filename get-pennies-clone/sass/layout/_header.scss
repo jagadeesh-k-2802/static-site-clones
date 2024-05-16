@@ -1,0 +1,107 @@
+.main-content {
+  @extend .section;
+  display: grid;
+  grid-template: 90vh / repeat(2, 1fr);
+  margin-top: 6.5rem;
+  column-gap: 3rem;
+
+  &__grid-1 {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5rem;
+
+    .grid-1__title {
+      @extend %gotham-rounded-light;
+      font-size: 4.8rem;
+      margin-bottom: 4rem;
+      line-height: 6rem;
+    }
+
+    .grid-1__description {
+      font-size: 2.2rem;
+      line-height: 3rem;
+      max-width: 80%;
+    }
+  }
+
+  &__grid-2 {
+    height: 100%;
+
+    .grid-2__iphone {
+      height: 100%;
+      margin-left: 9.5rem;
+    }
+  }
+
+  @include respond(desktop) {
+    grid-template: 2fr / 1fr;
+    margin-top: 4rem;
+
+    &__grid-1 {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4rem;
+
+      .grid-1__logo {
+        margin-bottom: 2rem;
+      }
+
+      .grid-1__title {
+        font-size: 4.25rem;
+        margin-bottom: 2.8rem;
+        text-align: center;
+        line-height: 4.8rem;
+      }
+
+      .grid-1__description {
+        text-align: center;
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 3.15rem;
+        margin: 0 auto;
+        max-width: 85%;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__grid-2 {
+      display: flex;
+      justify-content: center;
+
+      .grid-2__iphone {
+        margin-left: 0;
+        width: 52%;
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    &__grid-1 {
+      .grid-1__title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+        line-height: 3.25rem;
+      }
+    }
+
+    &__grid-2 {
+      .grid-2__iphone {
+        margin-left: 0;
+        width: 65%;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    &__grid-2 {
+      .grid-2__iphone {
+        margin-left: 0;
+        width: 90%;
+        height: 100%;
+      }
+    }
+  }
+}

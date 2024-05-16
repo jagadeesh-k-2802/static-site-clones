@@ -1,0 +1,268 @@
+%header-btn {
+  text-decoration: none;
+  padding: 2.4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: $color-grey-1;
+  transition: background-color 100ms;
+
+  &:hover {
+    background-color: rgba(32, 33, 36, 0.04);
+  }
+
+  @include respond(lg) {
+    padding: 2rem;
+  }
+}
+
+%sidebar-btn {
+  border: 0;
+  background-color: transparent;
+  height: 36px;
+  width: 36px;
+  margin-right: 1.6rem;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  transition: background-color 200ms;
+  display: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #eee;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+%logo {
+  height: 30px;
+  width: 125px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  height: 64px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 50;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+
+  &__sidebar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    // display: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms;
+
+    &__container {
+      width: 270px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 12px rgba(0, 0, 0, 0.4);
+      z-index: 300;
+      transform: translateX(-100%);
+      transition: transform 200ms ease;
+
+      &__header {
+        display: flex;
+        align-items: center;
+        padding: 20px 18px;
+
+        &__menu {
+          @extend %sidebar-btn;
+          display: block;
+        }
+
+        &__logo {
+          @extend %logo;
+        }
+      }
+
+      &__links {
+        list-style-type: none;
+        flex-direction: column;
+
+        &__link {
+          &:last-child {
+            a {
+              border-bottom: 1px solid #dadce0;
+            }
+          }
+
+          a {
+            display: inline-block;
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $color-grey-1;
+            padding: 20px;
+            border-top: 1px solid #dadce0;
+
+            &:hover {
+              background-color: #eee;
+            }
+          }
+        }
+      }
+    }
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+
+      .header__sidebar__container {
+        transform: translateX(0);
+      }
+    }
+
+    &.hide {
+      .header__sidebar__container {
+        animation: slide-in 200ms reverse;
+      }
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__menu {
+      @extend %sidebar-btn;
+    }
+
+    &__logo {
+      @extend %logo;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 5rem;
+
+    &__nav {
+      &__list {
+        display: flex;
+        list-style-type: none;
+
+        &__item {
+          a {
+            @extend %header-btn;
+          }
+        }
+      }
+    }
+
+    &__search__container {
+      position: relative;
+
+      &::before {
+        content: '';
+        background-image: url('/img/search-black-24dp.svg');
+        position: absolute;
+        top: 18px;
+        left: 4px;
+        height: 24px;
+        width: 24px;
+        z-index: 1;
+      }
+
+      input {
+        background: #f1f3f4;
+        border: none;
+        font: inherit;
+        font-size: 1.6rem;
+        margin: 1.25rem 0;
+        width: 110%;
+        padding: 8px 0 8px 35px;
+        line-height: 2rem;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        position: relative;
+        transition: all 200ms;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 2px 0 0 #3fc4ff;
+        }
+      }
+    }
+  }
+
+  &__right {
+    margin-right: 1rem;
+
+    &__signin {
+      @extend %header-btn;
+      font-family: inherit;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+      text-transform: uppercase;
+    }
+  }
+
+  @include respond(md) {
+    &__left {
+      &__menu {
+        display: block;
+      }
+    }
+
+    &__middle {
+      display: none;
+    }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

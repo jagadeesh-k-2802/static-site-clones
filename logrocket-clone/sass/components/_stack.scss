@@ -1,0 +1,57 @@
+.stack {
+  background-color: #383f4d;
+  color: #fdfdfd;
+  padding: 9rem 0 9rem $padding-horizontal;
+  border-bottom: 1px solid #e3e3e3;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    max-width: 40%;
+
+    .text__heading {
+      @include logrocket-museo-sans(300);
+      font-size: 3.2rem;
+      line-height: 5.6rem;
+      margin-bottom: 4rem;
+    }
+
+    .text__desc {
+      @include logrocket-museo-sans(300);
+      font-size: 2.1rem;
+      line-height: 4rem;
+      margin-bottom: 5rem;
+    }
+
+    .text__technologies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem 4rem;
+
+      .technologies__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .item__logo {
+          height: 5rem;
+        }
+
+        .item__name {
+          @include logrocket-museo-sans(300);
+          font-size: 2.1rem;
+          line-height: 4rem;
+        }
+      }
+    }
+  }
+
+  &__image {
+    img {
+      width: 75rem;
+    }
+  }
+}

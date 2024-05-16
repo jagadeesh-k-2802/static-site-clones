@@ -1,0 +1,156 @@
+// FOOTER
+
+.main-footer {
+  background-color: #f5f5f7;
+  margin-top: 1rem;
+  color: #515154;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 65%;
+    margin-top: 1rem;
+  }
+
+  &__foot-note {
+    font-size: 1.2rem;
+    color: #86868b;
+    line-height: 3rem;
+    justify-self: flex-start;
+    width: 58%;
+    margin-bottom: 2rem;
+  }
+
+  &__divider {
+    margin: 1rem 0;
+    background-color: rgb(210, 210, 215);
+    height: 0.7px;
+  }
+
+  &__retailer {
+    margin-top: 1.7rem;
+    font-size: 1.3rem;
+
+    .highlight {
+      text-decoration: none;
+      color: $apple-blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__nav {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+      display: flex;
+    }
+
+    &__copyright {
+      font-size: 1.2rem;
+      margin-right: 1.75rem;
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-items: center;
+
+      .vertical-divider {
+        margin-left: 0.7rem;
+        width: 1px;
+        height: 100%;
+        background-color: #d2d2d7;
+      }
+    }
+
+    &__list-item {
+      font-size: 1.2rem;
+      margin-left: 1.8rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__lists {
+    display: grid;
+    margin-top: 2.5rem;
+
+    grid-template-areas:
+      'explore services business programme about'
+      'explore services education values about'
+      'explore account  healthcare values about';
+  }
+
+  &__list {
+    list-style: none;
+
+    &:first-child {
+      grid-area: explore;
+    }
+
+    &:nth-child(2) {
+      grid-area: services;
+    }
+
+    &:nth-child(3) {
+      grid-area: account;
+    }
+
+    &:nth-child(4) {
+      grid-area: business;
+    }
+
+    &:nth-child(5) {
+      grid-area: education;
+    }
+
+    &:nth-child(6) {
+      grid-area: healthcare;
+    }
+
+    &:nth-child(7) {
+      grid-area: programme;
+    }
+
+    &:nth-child(8) {
+      grid-area: values;
+    }
+
+    &:nth-child(9) {
+      grid-area: about;
+    }
+  }
+
+  &__list-title {
+    color: #1d1d1f;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  &__list-item {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <title>BitPay Business - Clone</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav__left">
+          <li class="header__nav__left__logo">
+            <a href="#">
+              <img src="/img/bitpay-logo-blue.svg" alt="Logo" />
+            </a>
+          </li>
+          <li class="header__nav__left__link active">
+            <a href="#">Business</a>
+          </li>
+          <li class="header__nav__left__link"><a href="#">Personal</a></li>
+        </ul>
+
+        <button class="header__nav__menu">
+          <img src="/img/menu-icon.365c171.svg" />
+        </button>
+
+        <ul class="header__nav__right">
+          <li class="header__nav__right__dropdown">Products</li>
+          <li class="header__nav__right__dropdown">Company</li>
+
+          <li class="header__nav__right__divider"></li>
+
+          <li class="header__nav__right__link"><a href="#">Help</a></li>
+          <li class="header__nav__right__link"><a href="#">Log In</a></li>
+          <li><a href="#" class="btn btn--primary">Get Started</a></li>
+        </ul>
+      </nav>
+      <nav class="header__nav-mobile">
+        <ul>
+          <li><a class="active" href="#">Business</a></li>
+          <li><a href="#">Personal</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-section__text">
+        <h1>
+          Accept
+          <span
+            class="typeWriter"
+            data-speed="3"
+            data-text='["Bitcoin", "Ethereum", "Bitcoin", "XRP", "GUSD"]'
+          ></span>
+        </h1>
+        <h1>for online payments</h1>
+
+        <div class="hero-section__text__lead">
+          <p>
+            <img src="/img/check.svg" alt="check" />
+            <strong>Global</strong> — Reach new markets instantly
+          </p>
+
+          <p>
+            <img src="/img/check.svg" alt="check" />
+            <strong>Eliminate fraud</strong> — No chargebacks or ID theft
+          </p>
+
+          <p>
+            <img src="/img/check.svg" alt="check" />
+            <strong>Just 1%</strong> — No hidden fees ever
+          </p>
+        </div>
+
+        <a href="#" class="hero-section__text__cta">
+          Looking for the BitPay Card or Wallet?
+          <img src="/img/arrow-right.svg" alt="" />
+        </a>
+
+        <div class="hero-section__text__btns">
+          <a href="#" class="btn btn--primary">Get Started</a>
+          <a href="#" class="btn btn--transparent">Contact Sales</a>
+        </div>
+      </div>
+
+      <div class="hero-section__invoice">
+        <div id="invoice-container" class="hero-section__invoice__big">
+          <img
+            src="/img/bauhaus-pattern.svg"
+            class="hero-section__invoice__big__pattern"
+          />
+          <img
+            src="/img/checkout.svg"
+            class="hero-section__invoice__big__checkout"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section">
+      <div class="testimonial-section__background-sm">
+        <div class="testimonial-section__background-sm__stagger">
+          <div class="card">
+            <span id="testimonial-quote" class="card-text--quotation">“</span>
+            <p id="testimonial-text" class="card-text--break">
+              BitPay allows our global fans to seamlessly make purchases with
+              the Mavs.”
+            </p>
+
+            <div class="card-text--divider"></div>
+
+            <div class="card-bottom">
+              <div>
+                <h3 id="testimonial-person" class="card-bottom__title">
+                  Mark Cuban
+                </h3>
+                <p id="testimonial-work" class="card-bottom__subtitle">Owner</p>
+                <img
+                  id="testimonial-image"
+                  class="card-bottom__avatar"
+                  src="/img/mavericks.50aec49.svg"
+                />
+              </div>
+
+              <button id="testimonial-next-btn" class="card-bottom__arrow">
+                <img src="/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-section__background">
+        <div class="testimonial-section__background__stagger">
+          <div class="card">
+            <span id="testimonial-quote" class="card-text--quotation">“</span>
+            <p id="testimonial-text" class="card-text--break">
+              BitPay allows our global fans to seamlessly make purchases with
+              the Mavs.”
+            </p>
+
+            <div class="card-text--divider"></div>
+
+            <div class="card-bottom">
+              <div>
+                <h3 id="testimonial-person" class="card-bottom__title">
+                  Mark Cuban
+                </h3>
+                <p id="testimonial-work" class="card-bottom__subtitle">Owner</p>
+                <img
+                  id="testimonial-image"
+                  class="card-bottom__avatar"
+                  src="/img/mavericks.50aec49.svg"
+                />
+              </div>
+
+              <button id="testimonial-next-btn" class="card-bottom__arrow">
+                <img src="/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-section__info">
+        <h1>
+          Trusted by <br /><span class="highlight--primary">thousands</span>
+          of<br />businesses – worldwide.
+        </h1>
+
+        <a href="#">
+          <img src="/img/arrow-top-right.svg" alt="arrow-top-right" />
+          See our merchant directory
+        </a>
+
+        <div class="testimonial-section__info__companies">
+          <div class="testimonial-section__info__companies__box">
+            <img width="95" src="/img/microsoft.667af1f.svg" />
+            <img width="75" src="/img/airbaltic.873b5a4.svg" />
+            <img width="75" src="/img/newegg.787a248.svg" />
+          </div>
+
+          <div class="testimonial-section__info__companies__box">
+            <img width="105" src="/img/neteller.a1aa0ee.svg" />
+            <img alt="Twitch.com" width="80" src="/img/twitch.68320af.svg" />
+            <img alt="Shopify Logo" width="95" src="/img/shopify.e57c7b1.svg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS DECK SECTION -->
+    <section class="business-deck-section">
+      <h1>
+        Accept crypto payments <span class="highlight--primary">anywhere</span>
+      </h1>
+
+      <div class="business-deck-section__cards">
+        <div class="business-deck-section__cards__card">
+          <img src="/img/dashboard-icon.svg" />
+          <h3>On your website</h3>
+          <p>
+            Accept crypto payments and donations from your online customers.
+          </p>
+          <a href="#">Learn More <img src="/img/arrow-right.svg" /></a>
+        </div>
+
+        <div class="business-deck-section__cards__card">
+          <img src="/img/email-icon.57c6b1a.svg" />
+          <h3>On email</h3>
+          <p>
+            Send invoices to vendors as quickly and easily as sending an email.
+          </p>
+          <a href="#">Learn More <img src="/img/arrow-right.svg" /></a>
+        </div>
+
+        <div class="business-deck-section__cards__card">
+          <img src="/img/settlement-icon.8306aba.svg" />
+          <h3>On person</h3>
+          <p>
+            Accept Bitcoin on your smartphone or tablet at your retail store or
+            restaurant.
+          </p>
+          <a href="#">Learn More <img src="/img/arrow-right.svg" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS SETTLEMENTS SECTION -->
+    <section class="business-settlements">
+      <div class="business-settlements__text">
+        <h1>
+          Accept crypto, <br />
+          get paid in
+          <a href="#" id="currencyTween" class="tween-text">BUP</a>
+        </h1>
+
+        <p>
+          <img src="/img/check.svg" />Receive funds directly to your bank
+          account with zero price volatility or risk.
+        </p>
+        <p>
+          <img src="/img/check.svg" />Bank deposits in 38 countries, settled in
+          US Dollars, Euros, GBP, and more.
+        </p>
+
+        <a class="business-settlements__text__cta" href="#"
+          >See how it works <img src="/img/arrow-right.svg"
+        /></a>
+      </div>
+
+      <div class="business-settlements__image">
+        <img src="/img/dashboard.png" alt="dashboard" />
+      </div>
+    </section>
+
+    <!-- BUSINESS STATS SECTION -->
+    <section class="business-stats">
+      <div class="business-stats__image">
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 14.75%; margin-left: 9%"
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 33%; margin-left: 22.5%; animation-delay: 1s"
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="
+            margin-top: 10.55%;
+            margin-left: 44.75%;
+            animation-delay: 1.75s;
+          "
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 23%; margin-left: 42%; animation-delay: 2.5s"
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 8%; margin-left: 71.5%; animation-delay: 3.25s"
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 39%; margin-left: 51%; animation-delay: 4s"
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="
+            margin-top: 12.75%;
+            margin-left: 79.25%;
+            animation-delay: 4.25s;
+          "
+        ></div>
+        <div
+          class="bubble bubble--spread"
+          style="margin-top: 37.6%; margin-left: 93%; animation-delay: 5.5s"
+        ></div>
+        <div class="bubble" style="margin-top: 14.75%; margin-left: 9%"></div>
+        <div
+          class="bubble"
+          style="margin-top: 33%; margin-left: 22.5%; animation-delay: 1s"
+        ></div>
+        <div
+          class="bubble"
+          style="
+            margin-top: 10.55%;
+            margin-left: 44.75%;
+            animation-delay: 1.75s;
+          "
+        ></div>
+        <div
+          class="bubble"
+          style="margin-top: 39%; margin-left: 51%; animation-delay: 4s"
+        ></div>
+        <div
+          class="bubble"
+          style="
+            margin-top: 12.75%;
+            margin-left: 79.25%;
+            animation-delay: 4.25s;
+          "
+        ></div>
+        <div
+          class="bubble"
+          style="margin-top: 8%; margin-left: 71.5%; animation-delay: 3.25s"
+        ></div>
+        <div
+          class="bubble"
+          style="margin-top: 37.6%; margin-left: 93%; animation-delay: 5.5s"
+        ></div>
+
+        <div class="card card--left">
+          <p class="bp-card--stat-header">
+            BitPay has processed <br />
+            more than
+          </p>
+          <h1 class="text__heading-2 mt-4">$2.8 Billion</h1>
+          <span class="card-tag float-left">Since 2011</span>
+        </div>
+
+        <div class="card card--right">
+          <p class="bp-card--stat-header">
+            Growth of sales <br />
+            <span class="highlight--primary">worldwide</span>
+          </p>
+          <h1 class="text__heading-2 mt-4 ml-3">+328%</h1>
+          <span class="card-tag float-right">Sept 2016 - Sept 2017</span>
+        </div>
+      </div>
+
+      <div class="business-stats__text">
+        <h1>
+          Gain access to a <br />
+          <span class="highlight--primary">$250 billion</span> crypto <br />
+          market
+        </h1>
+
+        <p>
+          <img src="/img/check.svg" />Accept payments from anyone in the world
+          and get settled within 48 hours.
+        </p>
+        <p>
+          <img src="/img/check.svg" />Join the global blockchain financial
+          system and take control of your money.
+        </p>
+      </div>
+    </section>
+
+    <!-- GET STARTED -->
+    <section class="get-started">
+      <h1>Ready to get started?</h1>
+      <p>
+        Join the thousands of businesses already using BitPay. It's free to sign
+        up.
+      </p>
+
+      <div class="get-started__btns">
+        <a href="#" class="btn btn--primary">Get Started</a>
+        <a href="#" class="btn btn--transparent">Contact Sales</a>
+      </div>
+
+      <a href="#">
+        Looking for the BitPay Card or Wallet?
+        <img src="/img/arrow-right.svg" />
+      </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__container__help">
+          <h1>We're here to help</h1>
+
+          <div>
+            <p>
+              Support is just a few taps away. You can also get your questions
+              answered by using our <a href="#">help library.</a>
+            </p>
+
+            <a href="#">Contact Us <img src="/img/arrow-right.svg" /></a>
+          </div>
+        </div>
+
+        <div class="footer__container__logo-sm">
+          <img src="/img/bitpay-logo-white.712bdcb.svg" alt="" />
+        </div>
+
+        <div id="collapsibles" class="footer__container__content-sm">
+          <div class="footer__container__content-sm__collapsible">
+            <div class="subheader">
+              <h3>Business</h3>
+              <img src="/img/plus.svg" />
+            </div>
+            <div class="items">
+              <a href="#">Payments</a>
+              <a href="#">Billing</a>
+              <a href="#">Pricing</a>
+              <a href="#">Exchange Rates</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
+          <div class="footer__container__content-sm__collapsible">
+            <div class="subheader">
+              <h3>Personal</h3>
+              <img src="/img/plus.svg" />
+            </div>
+            <div class="items">
+              <a href="#">Card</a>
+              <a href="#">Card FAQ</a>
+              <a href="#">Wallet</a>
+              <a href="#">Wallet FAQ</a>
+              <a href="#">Extension</a>
+            </div>
+          </div>
+          <div class="footer__container__content-sm__collapsible">
+            <div class="subheader">
+              <h3>Developers</h3>
+              <img src="/img/plus.svg" />
+            </div>
+            <div class="items">
+              <a href="#">Docs</a>
+              <a href="#">Bitcore</a>
+              <a href="#">Insight</a>
+              <a href="#">Open Source</a>
+              <a href="#">PGP Keys</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
+          <div class="footer__container__content-sm__collapsible">
+            <div class="subheader">
+              <h3>Company</h3>
+              <img src="/img/plus.svg" />
+            </div>
+            <div class="items">
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Merchant Directory <span class="new">New</span></a>
+              <a href="#">Press</a>
+              <a href="#">BitPay Brand Guide</a>
+              <a href="#">Blog</a>
+              <a href="#">Stats</a>
+              <a href="#">Legal</a>
+              <a href="#">Privacy</a>
+              <a href="#">Manage Cookies</a>
+              <a href="#">Do Not Sell My Personal Information under CCPA</a>
+              <span class="social-links">
+                <a href="#"><img src="/img/linkedin-icon.0bdca29.svg" /></a>
+                <a href="#"><img src="/img/twitter-icon.7d87ff7.svg" /></a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__container__content">
+          <div class="footer__container__content__logo">
+            <img src="/img/bitpay-logo-white.712bdcb.svg" />
+          </div>
+          <div class="footer__container__content__list">
+            <h3>Business</h3>
+            <ul>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Billing</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Exchange Rates</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__content__list">
+            <h3>Personal</h3>
+            <ul>
+              <li><a href="#">Card</a></li>
+              <li><a href="#">Card FAQ</a></li>
+              <li><a href="#">Wallet</a></li>
+              <li><a href="#">Wallet FAQ</a></li>
+              <li><a href="#">Extension</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__content__list">
+            <h3>Developers</h3>
+            <ul>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Bitcore</a></li>
+              <li><a href="#">Insight</a></li>
+              <li><a href="#">Open Source</a></li>
+              <li><a href="#">PGP Keys</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer__container__content__list">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li>
+                <a href="#">Merchant Directory <span class="new">New</span></a>
+              </li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">BitPay Brand Guide</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Stats</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Manage Cookies</a></li>
+              <li>
+                <a href="#">Do Not Sell My Personal Information under CCPA</a>
+              </li>
+              <li class="social-links">
+                <a href="#"><img src="/img/linkedin-icon.0bdca29.svg" /></a>
+                <a href="#"><img src="/img/twitter-icon.7d87ff7.svg" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+// IPHONE SE SECTION
+
+.iphone-se {
+  height: 76vh;
+  background: rgb(19, 19, 19);
+  margin-top: 4.75rem;
+  display: flex; 
+
+  .iphone-se {
+    height: 76vh;
+    background: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__container {
+      height: 70%;
+      width: 70%;
+      color: #fff;
+      text-align: center;
+      user-select: none;
+      letter-spacing: 0.05rem;
+
+      &__title {
+        font-size: 5rem;
+        font-weight: 600;
+        margin: 2.75rem 0 0.5rem 0;
+      }
+
+      &__subtitle {
+        font-size: 2.75rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      &__cta {
+        color: $apple-blue;
+        text-decoration: none;
+        font-size: 2.1rem;
+        font-weight: 400;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &__img {
+        height: 100%;
+        width: 100%;
+
+        background: {
+          image: url('/img/iphone-se-hero.jpg');
+          position: center;
+          size: cover;
+          repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  align-items: center;
+  flex-direction: column;
+
+  &__container {
+    height: 70%;
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    user-select: none;
+
+    &__title {
+      font-size: 5rem;
+      font-weight: 600;
+      margin: 2.75rem 0 0.5rem 0;
+    }
+
+    &__subtitle {
+      font-size: 2.75rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    &__cta {
+      color: #2997ff;
+      text-decoration: none;
+      font-size: 2.1rem;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+
+      background: {
+        image: url('/img/iphone-se-hero.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+      }
+    }
+  }
+}

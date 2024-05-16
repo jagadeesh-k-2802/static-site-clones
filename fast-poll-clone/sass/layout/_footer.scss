@@ -1,0 +1,111 @@
+.footer {
+  padding: 50px 0;
+  width: 1024px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__logo {
+      img {
+        width: 3.5rem;
+      }
+    }
+
+    &__social-links {
+      margin-top: 7rem;
+
+      & > * {
+        transition: opacity 420ms;
+
+        &:hover {
+          opacity: 0.6;
+        }
+
+        &:first-child {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    &__copyright {
+      margin-top: 3rem;
+      font-size: 1.3rem;
+      color: #c9c9c9;
+      letter-spacing: -0.21px;
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item {
+      margin-right: 30px;
+
+      &__title {
+        margin-bottom: 1.25rem;
+      }
+
+      &__list {
+        list-style-type: none;
+
+        li {
+          margin-bottom: 1.6rem;
+
+          a {
+            font-size: 1.45rem;
+            color: #b1b1b1;
+            font-weight: 400;
+            transition: color 500ms;
+
+            &:hover {
+              color: $green-color;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond(sm) {
+      grid-template: repeat(2, min-content) / repeat(2, 1fr);
+
+      &__item {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  @include respond(xl) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__left {
+      margin-bottom: 3rem;
+
+      &__social-links {
+        margin-top: 3rem;
+      }
+
+      &__copyright {
+        margin-top: 1.5rem;
+      }
+    }
+
+    &__right {
+      &__item {
+        margin-right: 4.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+// Join Best
+
+.join-best {
+  @include flex-box-center(column);
+  margin-top: 2rem;
+  margin-bottom: 15rem;
+
+  &__logo-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 120px);
+    grid-template-columns: repeat(5, 150px);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 0 4rem;
+
+    img {
+      max-width: 150px;
+    }
+  }
+}

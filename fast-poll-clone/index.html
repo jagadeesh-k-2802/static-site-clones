@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fast Poll</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__nav">
+        <a href="#" class="header__nav__logo">
+          <img src="/img/logo.png" alt="fast-poll" />
+        </a>
+
+        <a href="#" class="header__nav__logo-sm">
+          <img src="/img/fast-poll-icon.svg" alt="fast-poll" />
+        </a>
+
+        <ul class="header__nav__links">
+          <li class="header__nav__links__link">
+            <a href="#">Public Polls</a>
+          </li>
+          <li class="header__nav__links__link header__nav__links__link--new">
+            <a href="#">Go Pro <span class="new-badge">new</span></a>
+          </li>
+          <li class="header__nav__links__link create-poll">
+            <a href="#" class="primary">Create Poll</a>
+          </li>
+        </ul>
+
+        <ul class="header__nav__buttons">
+          <a href="#" class="btn btn--transparent">Login</a>
+          <a href="#" class="btn btn--blue">Sign Up</a>
+        </ul>
+
+        <button id="menu-btn" class="header__nav__hamburger-menu">
+          <span class="header__nav__hamburger-menu__box"></span>
+        </button>
+      </nav>
+
+      <div class="header__hero-content">
+        <h1>
+          Create instant, real-time <span class="primary">polls</span> for
+          <span
+            class="typeWriter change"
+            data-speed="2"
+            data-text='["work", "fun", "feedback", "engagement", "free"]'
+          >
+            free
+          </span>
+        </h1>
+
+        <a href="#" class="btn btn--primary">Create your poll</a>
+
+        <p class="header__hero-content__reg">
+          No registration required, it’s 100% free and takes less than a minute.
+        </p>
+      </div>
+
+      <div class="header__brands">
+        <p>Used by the best</p>
+
+        <ul class="header__brands__list">
+          <li class="facebook">
+            <img src="/img/home-logo-facebook.svg" alt="FB" />
+          </li>
+          <li class="amazon">
+            <img src="/img/home-logo-amazon.svg" alt="Amazon" />
+          </li>
+          <li class="linkedin">
+            <img src="/img/home-logo-linkedin.svg" alt="LinkedIn" />
+          </li>
+          <li class="htc">
+            <img src="/img/home-logo-htc.svg" alt="HTC" />
+          </li>
+          <li class="whatsapp">
+            <img src="/img/home-logo-whatsapp.svg" alt="WhatsApp" />
+          </li>
+          <li class="mailchimp">
+            <img src="/img/home-logo-mailchimp.svg" alt="MailChimp" />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Fixed Nav -->
+    <header class="fixed-header">
+      <a class="fixed-header__logo" href="#">
+        <img src="/img/fast-poll-icon.svg" alt="Logo" />
+      </a>
+
+      <div class="fixed-header__buttons">
+        <a href="#" class="btn btn--primary">Create Poll</a>
+        <a href="#" class="btn btn--blue">Sign Up</a>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-nav" class="mobile-nav">
+      <div class="mobile-nav__wrapper">
+        <a class="mobile-nav__wrapper__link" href="#">Go Pro</a>
+        <a class="mobile-nav__wrapper__link" href="#">Public Polls</a>
+        <div class="mobile-nav__wrapper__nav-divider"></div>
+        <a class="mobile-nav__wrapper__link" href="#">Login</a>
+        <a class="mobile-nav__wrapper__link" href="#">Sign Up</a>
+      </div>
+    </div>
+
+    <!-- Realtime Results -->
+    <section class="realtime-results">
+      <div class="section-wrapper">
+        <div class="section-wrapper__text-content">
+          <h1 class="section-wrapper__section-title">
+            Real-time results delivered in a stunning way
+          </h1>
+          <p class="section-wrapper__section-description">
+            Designed to be pixel perfect and maximise interactions and results.
+          </p>
+        </div>
+
+        <div class="section-wrapper__browser-window">
+          <img
+            src="/img/home-browser-window-one.png"
+            alt="Fast poll results page"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience -->
+    <section class="audience">
+      <div class="section-wrapper">
+        <div class="section-wrapper__left">
+          <h2 class="section-wrapper__section-title">
+            Interact with your audience in an instant
+          </h2>
+          <p class="section-wrapper__section-description">
+            Create a poll and you will immediately be given a url to your poll.
+            Share the url with anyone and gather votes in seconds.
+          </p>
+        </div>
+
+        <div class="section-wrapper__right-full-section">
+          <img
+            src="/img/home-community-logos.jpg"
+            alt="Online community logos for Facebook Gaming, Twitter, YouTube and Twitch"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Control -->
+    <section class="control">
+      <div class="section-wrapper">
+        <div class="section-wrapper__text-content">
+          <h1 class="section-wrapper__section-title">
+            More flexibility & control over your polls
+          </h1>
+          <p class="section-wrapper__section-description">
+            Create an account to gain access to more advanced control for your
+            polls.
+          </p>
+        </div>
+
+        <div class="section-wrapper__browser-window">
+          <img
+            src="/img/home-browser-window-two.png"
+            alt="Fast Poll user dashboard"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sharing -->
+    <section class="sharing">
+      <div class="section-wrapper">
+        <div class="section-wrapper__left">
+          <h2 class="section-wrapper__section-title">
+            Ideal for easily sharing at events
+          </h2>
+          <p class="section-wrapper__section-description">
+            Just share the QR code in the presentation and allow everyone in the
+            room to access and vote on a poll in just a few taps.
+          </p>
+        </div>
+
+        <div class="section-wrapper__right">
+          <img
+            src="/img/home-device.png"
+            alt="A mobile device showing our QR code feature"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Icons -->
+    <section class="icons">
+      <div class="section-wrapper">
+        <div class="section-wrapper__text-content">
+          <h1 class="section-wrapper__section-title">
+            What makes us stand out from the crowd...
+          </h1>
+        </div>
+
+        <div class="grid">
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon poll-list"></p>
+            <h3 class="grid__icon-item__title">Stunning Design</h3>
+            <p class="grid__icon-item__text">
+              With Fast Poll you can create a stunning looking poll instantly
+              and share with the world.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon secure"></p>
+            <h3 class="grid__icon-item__title">Poll Security</h3>
+            <p class="grid__icon-item__text">
+              Get clear and accurate poll results with cookie or session
+              security checking enabled.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon profile"></p>
+            <h3 class="grid__icon-item__title">Fast Poll Profile</h3>
+            <p class="grid__icon-item__text">
+              Get yourself a Fast Poll profile where you can save your polls for
+              the world to vote on.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon public-polls"></p>
+            <h3 class="grid__icon-item__title">Public Polls</h3>
+            <p class="grid__icon-item__text">
+              You can browse all public polls created by Fast Poll members
+              instantly.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon sharing"></p>
+            <h3 class="grid__icon-item__title">Sharing</h3>
+            <p class="grid__icon-item__text">
+              Share polls privately or with the world. Sharing a private poll
+              will allow anyone you give the url to the ability to vote.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon account"></p>
+            <h3 class="grid__icon-item__title">More Control</h3>
+            <p class="grid__icon-item__text">
+              Create an account and get instant access to more features, it’s
+              100% free.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon comments"></p>
+            <h3 class="grid__icon-item__title">Poll Comments</h3>
+            <p class="grid__icon-item__text">
+              Allow members to comment and discuss a poll in detail with
+              threaded comments.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon close-voting"></p>
+            <h3 class="grid__icon-item__title">Close Voting</h3>
+            <p class="grid__icon-item__text">
+              Members can open and close voting on a Poll giving you more
+              control over voting.
+            </p>
+          </div>
+
+          <div class="grid__icon-item">
+            <p class="grid__icon-item__home-icon qr-code"></p>
+            <h3 class="grid__icon-item__title">QR Code Access</h3>
+            <p class="grid__icon-item__text">
+              Allowing meetings or large scale events to share a QR code which
+              gives access to a poll in one click.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pro -->
+    <section class="pro">
+      <div class="section-wrapper">
+        <div class="section-pro-wrapper">
+          <div class="section-pro-wrapper__left">
+            <p class="section-pro-wrapper__left__sml-title">Fast Poll</p>
+            <h3 class="section-pro-wrapper__left__title">Pro</h3>
+
+            <p>Add images to polls</p>
+            <p>Set auto end date for a poll</p>
+            <p>Save as draft option</p>
+            <p>Remove Ads</p>
+            <p>Pro badge on your profile</p>
+
+            <a href="#" class="btn btn--orange" title="Discover Pro">
+              Discover Pro
+            </a>
+          </div>
+
+          <div class="section-pro-wrapper__right">
+            <img src="/img/pro-browser-window.png" alt="Pro Poll Page" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Started -->
+    <section class="get-started">
+      <h1 class="section-wrapper__section-title">Get started</h1>
+
+      <p class="section-wrapper__section-description">
+        Create a free account and start creating polls instantly.
+      </p>
+
+      <a href="#" class="btn btn--blue">Sign Up</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__left">
+        <a class="footer__left__logo" href="#">
+          <img src="/img/fast-poll-icon.svg" alt="Fast Poll Icon" />
+        </a>
+
+        <div class="footer__left__social-links">
+          <a href="#">
+            <img src="/img/icon-facebook-footer.svg" alt="Facebook" />
+          </a>
+          <a href="#">
+            <img src="/img/icon-twitter-footer.svg" alt="Twitter" />
+          </a>
+        </div>
+
+        <p class="footer__left__copyright">&copy; 2020</p>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__right__item">
+          <h3 class="footer__right__item__title">GENERAL</h3>
+          <ul class="footer__right__item__list">
+            <li><a href="#">Public Polls</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Get in touch</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="#">What's New</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__right__item">
+          <h3 class="footer__right__item__title">ACCOUNT</h3>
+          <ul class="footer__right__item__list">
+            <li>
+              <a href="#">Go Pro<span class="new-badge">new</span></a>
+            </li>
+            <li>
+              <a href="#">Go Ad Free<span class="new-badge">new</span></a>
+            </li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Password Reset</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__right__item">
+          <h3 class="footer__right__item__title">PRIVACY</h3>
+          <ul class="footer__right__item__list">
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typelighterjs/typelighter.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

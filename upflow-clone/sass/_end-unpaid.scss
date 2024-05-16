@@ -1,0 +1,66 @@
+// End unpaid
+
+.end-unpaid {
+  margin: $padding-horizontal;
+  background-color: rgb(11, 37, 75);
+  color: #fff;
+  padding: 8rem 7rem;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text__heading {
+    font-size: 3.4rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+
+  .text__description {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      margin-top: 3rem;
+      font-weight: 600;
+      display: inline-block;
+      padding: 16px;
+      border-radius: 5px;
+      font-size: 1.7rem;
+      transition: all 200ms;
+    }
+  }
+
+  .btn-container__btn--1 {
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+
+  .btn-container__btn--2 {
+    margin-left: 2rem;
+    background-color: rgb(67, 88, 112);
+    color: #fff;
+
+    &:hover {
+      background-color: rgb(88, 107, 128);
+    }
+  }
+}

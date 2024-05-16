@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  color: $font-color;
+}
+
+::selection {
+  color: #fdfdfd;
+  background-color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fab {
+  background-color: $secondary-color;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  right: 2rem;
+  bottom: 2rem;
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+}

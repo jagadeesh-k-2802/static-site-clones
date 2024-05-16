@@ -1,0 +1,212 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: none;
+  transition: all 400ms;
+  z-index: 500;
+
+  &.sticky-header {
+    background-color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.035);
+
+    nav.header__nav {
+      padding: 2.35rem 7.5% 1.5rem 7.5%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 220ms;
+    padding: 3rem 7.5% 1.5rem 7.5%;
+
+    &__left {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+
+      &__logo {
+        height: auto;
+        width: 100px;
+        margin-right: 3rem;
+      }
+
+      &__link {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+
+        @include respond(sm) {
+          display: none;
+        }
+
+        @include respond(xl) {
+          display: block;
+        }
+
+        a {
+          color: #7f7f7f;
+          padding: 0 0.5rem;
+          transition: all 220ms;
+        }
+
+        &:hover {
+          a {
+            color: $primary-color;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+
+        &.active {
+          a {
+            color: #000;
+          }
+
+          border-bottom: 2px solid $primary-color;
+
+          &:hover {
+            a {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    &__menu {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      user-select: none;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      @include respond(sm) {
+        display: block;
+      }
+
+      @include respond(xl) {
+        display: none;
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(xl) {
+        display: flex;
+      }
+
+      li:not(:last-child) {
+        margin-right: 3.75rem;
+      }
+
+      &__dropdown {
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: all 220ms;
+
+        &:hover {
+          color: $primary-color;
+        }
+
+        &::after {
+          content: '';
+          display: inline-block;
+          margin-left: 5px;
+          vertical-align: middle;
+          border-top: 5.5px solid;
+          border-right: 5.5px solid transparent;
+          border-bottom: 0;
+          border-left: 5.5px solid transparent;
+          color: lighten($color: $primary-color, $amount: 10);
+        }
+      }
+
+      &__divider {
+        border-left: 1px solid #dfdfdf;
+        margin-top: 0.15em;
+        padding: 0.5em;
+        height: 28px;
+      }
+
+      &__link {
+        a {
+          color: #000;
+          font-size: 1.8rem;
+          font-weight: 500;
+          transition: all 220ms;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .btn {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__nav-mobile {
+    border-bottom: 2px solid #f2f2f2;
+    margin: 1rem 7.5%;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+
+      li {
+        &:not(:last-child) {
+          margin-right: 3.25rem;
+        }
+
+        a {
+          display: inline-block;
+          font-size: 1.8rem;
+          padding: 0.5rem;
+          font-weight: bold;
+          color: #7f7f7f;
+          transition: color 220ms;
+
+          &:hover {
+            color: $primary-color;
+          }
+
+          &.active {
+            color: #000;
+            border-bottom: 2px solid $primary-color;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond(sm) {
+      display: block;
+    }
+
+    @include respond(xl) {
+      display: none;
+    }
+  }
+}

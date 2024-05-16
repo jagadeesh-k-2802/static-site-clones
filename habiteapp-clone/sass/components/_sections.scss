@@ -1,0 +1,126 @@
+// HERO SECTION
+.hero {
+  display: grid;
+  grid-template: 75vh / repeat(2, 1fr);
+
+  &__grid-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .grid-1__heading {
+      font-size: 6rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      line-height: 7rem;
+    }
+
+    .grid-1__description {
+      margin-bottom: 6rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+      max-width: 75%;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__grid-2 {
+    @extend %flex-center;
+    justify-content: flex-end;
+
+    .grid-2__img {
+      height: 42rem;
+    }
+  }
+
+  @include respond(xl) {
+    &__grid-1 {
+      .grid-1__heading {
+        font-size: 4.7rem;
+        margin-bottom: 2rem;
+        line-height: 5rem;
+      }
+    }
+  }
+
+  @include respond(lg) {
+    justify-items: center;
+    grid-template: 73vh / 1fr;
+
+    margin-top: 10rem;
+
+    &__grid-1 {
+      .grid-1__heading {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+    }
+
+    &__grid-2 {
+      display: none;
+    }
+  }
+
+  @include respond(sm) {
+    &__grid-1 {
+      .grid-1__heading {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+        line-height: 3.3rem;
+      }
+
+      .grid-1__btn-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 65%;
+
+        > * {
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// DOWNLOAD SECTION
+.download {
+  text-align: center;
+
+  .content__description {
+    max-width: 100%;
+  }
+
+  .content__appstore-badge {
+    width: 20rem;
+  }
+
+  .content__link-container {
+    margin: 4rem 0;
+
+    .link-container__link {
+      color: $primary-color;
+      font-size: 1.35rem;
+      transition: all 500ms;
+      margin-right: 1rem;
+
+      &:hover {
+        color: $black-text;
+      }
+    }
+  }
+
+  .button--primary {
+    margin: 0 auto;
+  }
+
+  @include respond(sm) {
+    .content__description {
+      max-width: 90%;
+    }
+
+    .content__appstore-badge {
+      width: 18rem;
+    }
+  }
+}

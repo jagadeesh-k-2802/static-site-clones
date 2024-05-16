@@ -1,0 +1,28 @@
+.btn {
+  text-align: center;
+  transition: background-color 400ms, color 400ms;
+  padding: 0.4rem 1.25rem;
+  font-size: 1rem;
+
+  &--primary {
+    border: 1px solid #202020;
+    background-color: #202020;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: #202020;
+    }
+  }
+
+  &--secondary {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #242935;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+}

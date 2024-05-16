@@ -1,0 +1,55 @@
+// IPHONE 11 SECTION
+
+.iphone-11 {
+  height: 55vh;
+  cursor: pointer;
+  display: flex;
+  background-color: #fafafa;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    user-select: none;
+    letter-spacing: 0.05rem;
+
+    &__title {
+      font-size: 5.5rem;
+      font-weight: 600;
+      margin: 2.5rem 0 0.5rem 0;
+    }
+
+    &__subtitle {
+      font-size: 2.75rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    &__cta {
+      color: $apple-blue;
+      text-decoration: none;
+      font-size: 2.1rem;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+
+      background: {
+        image: url('/img/iphone-11-hero.jpg');
+        // position: center;
+        size: cover;
+        repeat: no-repeat;
+      }
+    }
+  }
+}

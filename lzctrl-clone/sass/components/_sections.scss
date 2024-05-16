@@ -1,0 +1,341 @@
+section {
+  padding: 8rem 0;
+}
+
+.section-heading {
+  border-radius: 50px;
+  color: $primary-color;
+  background-color: lighten($color: $primary-color, $amount: 30);
+  padding: 1.5rem 8rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+
+  &.invert {
+    background-color: #e6ecff;
+    color: #5274ee;
+  }
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+
+    @include respond(md) {
+      flex-direction: column;
+      margin-top: 15rem;
+    }
+
+    @media screen and (max-width: 1340px) {
+      padding: 2rem;
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 0;
+    }
+
+    @include respond(sm) {
+      padding: 0 1rem;
+    }
+
+    &__text {
+      max-width: 500px;
+      margin-right: 5rem;
+
+      @include respond(md) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+
+      h1 {
+        font-size: 6.4rem;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 1000px) {
+          font-size: 5rem;
+        }
+
+        span.highlight {
+          color: $primary-color;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: 0.2px;
+        margin-bottom: 1.5rem;
+      }
+
+      .btn-container {
+        & > *:first-child {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &__image {
+      img {
+        min-width: 300px;
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.change-game-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include respond(md) {
+      margin-top: 15rem;
+    }
+
+    img {
+      width: 80px;
+      margin-bottom: 2rem;
+    }
+
+    .divider-heading {
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid lighten($color: $primary-color, $amount: 25);
+    }
+
+    h3 {
+      span.underline {
+        text-decoration: underline;
+      }
+    }
+
+    h4 {
+      span.highlight {
+        color: $primary-color;
+      }
+    }
+
+    p.lead {
+      margin: 3rem 0;
+      width: 60%;
+      font-size: 1.8rem;
+      color: $primary-color-dark;
+      line-height: 2.5rem;
+
+      @include respond(md) {
+        width: 80%;
+        font-size: 1.7rem;
+      }
+    }
+
+    .btn-container {
+      & > *:first-child {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+
+.grid-card {
+  padding: 2rem;
+  border-radius: 8px;
+  transition: box-shadow 300ms;
+  max-width: 300px;
+  margin: 2rem;
+
+  @include respond(md) {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 5rem;
+  }
+
+  img {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    box-shadow: 0 1px 6px rgba(82, 116, 238, 0.25);
+  }
+
+  &.invert {
+    color: #fff;
+
+    &:hover {
+      box-shadow: 0 1px 6px lighten($color: $primary-color, $amount: 15);
+    }
+  }
+
+  .cta img {
+    height: auto;
+    width: 125px;
+  }
+}
+
+.software-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    .grid {
+      @include respond(md) {
+        padding: 0 5rem;
+      }
+
+      @include respond(sm) {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+.apps-section {
+  background-color: $primary-color;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .grid {
+      @include respond(md) {
+        padding: 0 5rem;
+      }
+
+      @include respond(sm) {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+.websites-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+    }
+
+    .grid {
+      @include respond(md) {
+        padding: 0 5rem;
+      }
+
+      @include respond(sm) {
+        padding: 0 1.5rem;
+      }
+    }
+  }
+}
+
+.newsletter-section {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(lg) {
+      flex-direction: column;
+      padding: 0 6rem;
+    }
+
+    @include respond(md) {
+      padding: 0 4rem;
+    }
+
+    .text-left {
+      margin-right: 3rem;
+      max-width: 600px;
+
+      @include respond(lg) {
+        margin-right: 0;
+        max-width: 100%;
+      }
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      p.lead {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: $primary-color-dark;
+        max-width: 80%;
+
+        @include respond(md) {
+          max-width: 100%;
+          font-size: 1.6rem;
+        }
+      }
+    }
+
+    .text-right {
+      @include respond(lg) {
+        margin-top: 2rem;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+      }
+
+      input {
+        margin-right: 0;
+
+        @include respond(lg) {
+          width: 100%;
+          font-size: 1.3rem;
+          margin-right: 0.5rem;
+        }
+      }
+
+      button {
+        padding: 1.5rem;
+
+        @include respond(lg) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

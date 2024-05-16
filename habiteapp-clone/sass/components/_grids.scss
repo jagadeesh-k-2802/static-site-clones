@@ -1,0 +1,112 @@
+.grid {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  gap: 0 2rem;
+  @extend .mt-10;
+
+  .grid__item {
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 30px 0px;
+    padding: 5rem 3rem;
+    border-radius: 5px;
+
+    .item__img {
+      text-align: center;
+      width: 90%;
+      margin-bottom: 3.25rem;
+    }
+
+    .item__heading {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .item__description {
+      font-size: 1.5rem;
+      color: $grey-text;
+    }
+  }
+
+  .card__item {
+    background-color: #fff;
+
+    .item__head {
+      display: flex;
+      padding: 5rem 3.25rem;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgb(238, 238, 238);
+
+      .head__plan-name {
+        color: rgb(34, 34, 34);
+        font-size: 2rem;
+      }
+
+      .head__plan-description {
+        color: rgb(117, 117, 117);
+        font-size: 1.45rem;
+      }
+
+      .head__plan-description--primary {
+        @extend .head__plan-description;
+        color: $primary-color;
+      }
+
+      .head__plan-description--danger {
+        @extend .head__plan-description;
+        color: $red-color;
+      }
+
+      .head__price {
+        font-size: 3.75rem;
+        font-weight: 700;
+      }
+    }
+
+    .item__list {
+      list-style: none;
+      padding: 2rem 0;
+
+      .list__item {
+        text-align: center;
+        color: rgb(119, 119, 119);
+        margin-bottom: 1.75rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @include respond(lg) {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 2.8rem 2.8rem;
+  }
+
+  @include respond(md) {
+    grid-template: 1fr / 1fr;
+
+    .card__item {
+      margin: 0 8rem;
+
+      .item__list {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @include respond(sm) {
+    .grid__item {
+      margin: 0 2rem;
+
+      .item__description {
+        font-size: 1.35rem;
+      }
+
+      .item__img {
+        width: 100%;
+      }
+    }
+
+    .card__item {
+      margin: 0 2rem;
+    }
+  }
+}

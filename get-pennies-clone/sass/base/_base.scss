@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem == 10px
+
+  @include respond(large-desktop) {
+    font-size: 68%;
+  }
+
+  @include respond(desktop) {
+    font-size: 58%; // 1rem == 9.3px
+  }
+
+  @include respond(tablet) {
+    font-size: 50%; // 1rem == 8px
+  }
+
+  @include respond(phone) {
+    font-size: 50%; // 1rem == 8px
+  }
+}
+
+body {
+  @extend %proxima-nova-regular;
+  color: $black-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %gotham-rounded-bold;
+}

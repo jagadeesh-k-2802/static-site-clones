@@ -1,0 +1,29 @@
+/* === TESTIMONIAL SECTION === */
+.testimonial {
+  .section-description {
+    max-width: 90%;
+  }
+}
+
+/* ===  APPSTORE SECTION === */
+.appstore {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-description {
+    color: $black-text;
+    max-width: 75%;
+
+    @include respond(desktop) {
+      max-width: 90%;
+    }
+  }
+
+  .wrapper__store-badge {
+    text-align: center;
+    width: 25rem;
+    margin: 0 auto;
+  }
+}

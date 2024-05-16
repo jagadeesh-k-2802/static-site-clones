@@ -1,0 +1,176 @@
+/* === FONTS === */
+%gotham-rounded-light {
+  font-family: 'gotham-rounded-light';
+  font-weight: lighter;
+}
+
+%gotham-rounded-bold {
+  font-family: 'gotham-rounded-bold';
+  font-weight: bold;
+}
+
+%proxima-nova-regular {
+  font-family: 'proxima-nova-regular';
+}
+
+/* === BACKGROUNDS === */
+.grey {
+  background-color: $grey-background;
+}
+
+.primary {
+  background-color: $primary-green;
+}
+
+/* === SECTION === */
+
+.section {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 0 2rem;
+}
+
+.section--split {
+  @extend .section;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 94%;
+
+    .content__description {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+
+  @include respond(desktop) {
+    grid-template-columns: 1fr;
+
+    &__content {
+      grid-row: 1 / 2;
+      align-items: center;
+
+      .content__description {
+        max-width: 85%;
+        text-align: center;
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    .content__description {
+      font-size: 2.15rem;
+      max-width: 95%;
+      margin-bottom: 7.5rem;
+    }
+  }
+}
+
+.section-heading {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @include respond(desktop) {
+    font-size: 3.5rem;
+  }
+
+  @include respond(tablet) {
+    font-size: 2.8rem;
+  }
+}
+
+.section-description {
+  text-align: center;
+  font-size: 2.3rem;
+  color: $grey-text;
+  max-width: 72%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  line-height: 3rem;
+
+  @include respond(desktop) {
+    font-size: 2.5rem;
+    max-width: 85%;
+  }
+
+  @include respond(tablet) {
+    font-size: 2.15rem;
+    max-width: 95%;
+    margin-bottom: 7.5rem;
+  }
+}
+
+.section-image-wrapper {
+  text-align: center;
+
+  @include respond(desktop) {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+/* === UTILITY CLASSES === */
+
+$spaces: 5, 7, 8, 10, 15;
+
+@each $space in $spaces {
+  .mt-#{$space} {
+    margin-top: $space + 0rem;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: $space + 0rem;
+  }
+
+  .mtb-#{$space} {
+    margin: $space + 0rem 0;
+  }
+
+  .pt-#{$space} {
+    padding-top: $space + 0rem;
+  }
+
+  .ptb-#{$space} {
+    padding: $space + 0rem 0;
+  }
+}
+
+/* === LIST === */
+
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.horizontal-list__item {
+  margin-right: 3.75rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.desktop-only {
+  // Hides in both tablet and mobile
+  @include respond(tablet) {
+    display: none;
+  }
+}

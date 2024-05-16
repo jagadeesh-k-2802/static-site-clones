@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: 'aktiv-grotsek', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fab {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  background-color: rgb(242, 41, 91);
+  padding: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgb(220, 31, 78);
+  }
+
+  @include respond(md) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.25;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}

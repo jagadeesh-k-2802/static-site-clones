@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <title>Urbanized Bikes - Clone</title>
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <div class="menu-wrapper">
+      <header class="menu-wrapper__header">
+        <button id="menu" class="menu-wrapper__header__menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <a href="#" class="menu-wrapper__header__logo">
+          <img src="/img/logo.svg" alt="logo" />
+        </a>
+
+        <a href="#" class="menu-wrapper__header__cart">
+          <span>0</span>
+        </a>
+      </header>
+
+      <aside id="sidemenu" class="menu-wrapper__side-menu">
+        <img
+          class="menu-wrapper__side-menu__logo"
+          src="/img/logo.svg"
+          alt="logo"
+        />
+
+        <hr class="full-width" />
+        <ul class="menu-wrapper__side-menu__links">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Bikes</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li>
+            <a href="#" class="cart">
+              <span class="count">0</span>
+              <span>Cart</span>
+            </a>
+          </li>
+        </ul>
+        <hr class="full-width" />
+        <div class="menu-wrapper__side-menu__social-links">
+          <a href="#" class="menu-wrapper__side-menu__social-links__item">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="#" class="menu-wrapper__side-menu__social-links__item">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="#" class="menu-wrapper__side-menu__social-links__item">
+            <span class="fa fa-pinterest"></span>
+          </a>
+        </div>
+        <ul class="menu-wrapper__side-menu__footer-links">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Technical support</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <main class="content">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div id="slide" class="hero-section__slider">
+          <div class="hero-section__slider__img"></div>
+          <div class="hero-section__slider__cover"></div>
+          <a href="#newsletter" class="hero-section__slider__bottom-arrow">
+            <span class="arrow"></span>
+          </a>
+        </div>
+
+        <div class="hero-section__info">
+          <article>
+            <h2>
+              Meet<br />
+              <strong>
+                the ultimate
+                <br />
+                urban bicycle
+              </strong>
+              <br />
+              <span id="slide-text">Designed with the city in mind</span>
+            </h2>
+            <a href="#" class="btn btn--secondary">Shop Now</a>
+            <h3>Free EU Shipping /30-day Money Back Guarantee</h3>
+          </article>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section id="newsletter" data-aos="slide-up" class="newsletter-section">
+        <h1>Built for <strong>the ultimate carefree</strong> city ride</h1>
+        <h3>No hassle. No flat tyres. No parts to replace.</h3>
+        <p>
+          Urbanized is an award winning designer bicycle, engineered for the
+          ultimate urban comfort and ease of use. Inspired by city living, the
+          URBANIZED bicycle comes packed full of thoughtful features for
+          everyday use to seamlessly compliment your lifestyle. It is
+          maintenance free, weatherproof and portable.
+        </p>
+        <form>
+          <label>
+            To learn more and get exclusive discounts, sign up to our newsletter
+          </label>
+          <div class="input-btn-wrapper">
+            <input type="email" />
+            <button class="btn btn--primary" type="submit">SIGN UP</button>
+          </div>
+        </form>
+        <hr />
+      </section>
+
+      <!-- MAINTENANCE SECTION -->
+      <section class="maintenance-section">
+        <div class="maintenance-section__img">
+          <img src="/img/placeholder.gif" alt="placeholder" />
+        </div>
+
+        <div class="maintenance-section__text">
+          <article>
+            <h2>
+              <strong>Maintenance free </strong>and
+              <strong>weatherproof</strong>
+            </h2>
+            <p>
+              All Urbanized bikes feature the stronger and quieter, grease free
+              belt drive system instead of a chain, and solid tires that never
+              go flat. The timeproof roller brakes and internal gear hub
+              complete the list of the ultimate low maintenance and weatherproof
+              components.<br />
+              <a href="#">+ Learn More</a>
+            </p>
+          </article>
+
+          <div class="maintenance-section__text__img">
+            <img src="/img/placeholder.gif" alt="placeholder" />
+          </div>
+        </div>
+      </section>
+
+      <!-- BUILT SECTION -->
+      <section data-aos="slide-up" class="built-section">
+        <div class="built-section__video">
+          <img src="/img/placeholder.gif" alt="placeholder" />
+          <video autoplay loop muted playsinline>
+            <source src="/video/built-with-city.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="built-section__text">
+          <article>
+            <h2>
+              Built with the
+              <strong>city in mind</strong>
+            </h2>
+            <p>
+              Experience the city-friendly functionality. Change gears while
+              waiting at the traffic light and be the first to kick off. Use the
+              specially designed handle to carry the bicycle effortlessly up and
+              down steps without the fear that the front wheel can turn back and
+              soil your clothes. There is a stabilizer to hold it straight. Feel
+              confident in your breaks even in bad weather conditions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- AWARD SECTION -->
+      <section data-aos="slide-up" class="award-section">
+        <div class="award-section__img">
+          <div class="award-section__img__hide-on-sm">
+            <img src="/img/Suit-You.jpg" alt="Suit-You" />
+            <img src="/img/Suit-You-2.jpg" alt="Suit-You-2" />
+          </div>
+
+          <div class="award-section__img__show-on-sm">
+            <img src="/img/placeholder.gif" alt="placeholder" />
+          </div>
+        </div>
+
+        <div class="award-section__text">
+          <article>
+            <h2>
+              Award winning design to
+              <strong>suit you</strong>
+            </h2>
+            <p>
+              Our designer bicycles are among the winners of one of the world’s
+              largest design competitions: <a href="#">The Red Dot Award!</a>
+              Urbanized maintenance free commuting bicycle is also Winner in
+              <a href="#">
+                Vehicle, Mobility and Transportation Design Category 2017-2018 </a
+              >. Whether it is the daily commute to work or the cycle ride to
+              your favourite café, the URBANIZED bicycle proves that style and
+              comfort are not mutually exclusive. Our comprehensive range of
+              seasonal colors is available for all models and sizes.
+            </p>
+          </article>
+
+          <div class="award-section__text__img">
+            <img src="/img/placeholder.gif" alt="placeholder" />
+          </div>
+        </div>
+
+        <div class="award-section__img-2">
+          <img src="/img/placeholder.gif" alt="placeholder" />
+        </div>
+      </section>
+
+      <!-- FEATURES SECTION -->
+      <section data-aos="slide-up" class="features-section">
+        <div class="features-section__title">
+          <h3 class="underlined-title">Features</h3>
+        </div>
+
+        <div class="features-section__grid grid grid-sm-2x2 grid-lg-ax4">
+          <div class="features-section__grid__grid-item">
+            <img src="/img/i0.png" />
+            <div class="text">
+              <h2><strong>Solid Tires</strong></h2>
+              <p>Puncture Proof</p>
+            </div>
+          </div>
+          <div class="features-section__grid__grid-item">
+            <img src="/img/i1.png" />
+            <div class="text">
+              <h2><strong>BELT DRIVE</strong></h2>
+              <p>Stronger, quieter, grease free</p>
+            </div>
+          </div>
+          <div class="features-section__grid__grid-item">
+            <img src="/img/i2.png" />
+            <div class="text">
+              <h2><strong>INTERNAL GEAR HUB</strong></h2>
+              <p>Durable, weatherproof, designed for the city</p>
+            </div>
+          </div>
+          <div class="features-section__grid__grid-item">
+            <img src="/img/i3.png" />
+            <div class="text">
+              <h2><strong>ROLLER BRAKES</strong></h2>
+              <p>Durable, weatherproof</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="center-items">
+          <a href="#" class="btn btn--primary">Learn More</a>
+        </div>
+      </section>
+
+      <!-- BIKES SECTION -->
+      <section data-aos="slide-up" class="bikes-section">
+        <div class="bikes-section__title">
+          <h3 class="underlined-title">Bikes</h3>
+        </div>
+
+        <div class="bikes-section__grid grid grid-md-ax2">
+          <a href="#" class="bikes-section__grid__grid-item">
+            <img src="/img/gents-bike.png" />
+            <div class="text">
+              <h2><strong>Gent's Bike</strong></h2>
+              <h3><strong>€ 1,680.00</strong></h3>
+            </div>
+          </a>
+          <a href="#" class="bikes-section__grid__grid-item">
+            <img src="/img/ladies-bike.png" />
+            <div class="text">
+              <h2><strong>Ladie's Bike</strong></h2>
+              <h3><strong>€ 1,680.00</strong></h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ACCESSORIES SECTION -->
+      <section data-aos="slide-up" class="accessories-section">
+        <div class="accessories-section__title">
+          <h3 class="underlined-title">Accessories</h3>
+        </div>
+
+        <div class="accessories-section__grid grid grid-md-2x2 grid-1170-ax3">
+          <a href="#" class="accessories-section__grid__grid-item">
+            <img src="/img/closca-helmet.jpg" />
+            <div class="text">
+              <h2><strong>Closca Helmet</strong></h2>
+              <h3><strong>€ 120.00</strong></h3>
+            </div>
+          </a>
+          <a href="#" class="accessories-section__grid__grid-item">
+            <img src="/img/urbanized-bell.jpg" />
+            <div class="text">
+              <h2><strong>Urbanized Bell</strong></h2>
+              <h3 class="grey dashed"><strong>€ 17.00</strong></h3>
+              <h3 class="red">Buy a bike and get it for free</h3>
+            </div>
+          </a>
+          <a href="#" class="accessories-section__grid__grid-item">
+            <img src="/img/light-set.jpg" />
+            <div class="text">
+              <h2><strong>Reelight front and back light set</strong></h2>
+              <h3 class="grey dashed"><strong>€ 25.00</strong></h3>
+              <h3 class="red">Buy a bike and get it for free</h3>
+            </div>
+          </a>
+        </div>
+
+        <hr />
+
+        <div class="center-items">
+          <a href="#" class="btn btn--primary">All Accessories</a>
+        </div>
+      </section>
+
+      <!-- NEWS SECTION -->
+      <section data-aos="slide-up" class="news-section">
+        <div class="news-section__title">
+          <h3 class="underlined-title">Latest News</h3>
+        </div>
+
+        <div class="news-section__grid grid grid-md-2x2 grid-1170-ax3">
+          <a href="#" class="news-section__grid__grid-item">
+            <img src="/img/red-dot-award.jpg" />
+            <div class="text">
+              <h2>
+                <strong>The Urbanized bike have won the Red Dot Award</strong>
+              </h2>
+              <p class="date">09.07.2019</p>
+              <p class="info">
+                We are really proud to announce that our designer bicycles are
+                among the winners of one of the world’s largest design
+                competitions: The Red Dot Award.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="news-section__grid__grid-item">
+            <img src="/img/article-2.jpg" />
+            <div class="text">
+              <h2>
+                <strong>Win your Dream Yacht Charter</strong>
+              </h2>
+              <p class="date">17.06.2019</p>
+              <p class="info">
+                Now we’re offering you a chance to win a once-in-a-lifetime
+                holiday afloat when you buy design-awarded Urbanized bike untill
+                15.07.2019.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="news-section__grid__grid-item">
+            <img src="/img/azure-news-screenshot.png" />
+            <div class="text">
+              <h2>
+                <strong
+                  >The Urbanized Bike Has Arrived to Get You on The Right
+                  Path.</strong
+                >
+              </h2>
+              <p class="date">13.02.2019</p>
+              <p class="info">
+                "Winter can be rough on bikes, so Bulgarian designer Hristo
+                Tashev created the Urbanized Bike to make year-round commuting
+                in the city a breeze." - Mark Teo
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <hr />
+
+        <div class="center-items">
+          <a href="#" class="btn btn--primary">All News</a>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <ul class="footer__links">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Technical support</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <hr />
+
+        <div class="footer__full-width-wrapper">
+          <div class="footer__full-width-wrapper__details">
+            <div>
+              <h4>Address</h4>
+              <p>
+                “URBANIZED” AD<br />
+                Stara Planina Str. No 8-10, floor.2, office 7 <br />
+                Raion Oborishte, 1000 Sofia, Bulgaria
+              </p>
+            </div>
+            <div>
+              <h4>Contact</h4>
+              <p>
+                Tel +359899868976 <br />
+                hello@urbanizedbikes.com
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__full-width-wrapper__credit-cards">
+            <div class="footer__full-width-wrapper__credit-cards__card">
+              <span class="fa fa-cc-paypal fa-sN" aria-hidden="true"></span>
+            </div>
+            <div class="footer__full-width-wrapper__credit-cards__card">
+              <span class="fa fa-cc-visa fa-sN" aria-hidden="true"></span>
+            </div>
+            <div class="footer__full-width-wrapper__credit-cards__card">
+              <span class="fa fa-cc-mastercard fa-sN" aria-hidden="true"></span>
+            </div>
+            <div class="footer__full-width-wrapper__credit-cards__card">
+              <span class="fa fa-cc-amex fa-sN" aria-hidden="true"></span>
+            </div>
+            <div class="footer__full-width-wrapper__credit-cards__card apple">
+              <span class="fa fa-apple fa-2x" aria-hidden="true"></span>
+              <span class="text">Pay</span>
+            </div>
+          </div>
+
+          <div class="footer__full-width-wrapper__features">
+            <div class="footer__full-width-wrapper__features__wrapper">
+              <div class="item">
+                <span class="fa fa-truck fa-mN" aria-hidden="true"></span>Free
+                EU Shipping
+              </div>
+              <div class="item">
+                <span class="fa fa-shield fa-mN" aria-hidden="true"></span
+                >2-year warranty
+              </div>
+              <div class="item">
+                <span class="fa fa-refresh fa-mN" aria-hidden="true"></span
+                >30-day money back guarantee
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="full-width" />
+
+        <p class="footer__small-text">
+          Design & Development &copy; Jack Studio
+        </p>
+        <a href="#" class="footer__nortron">
+          <img src="/img/nortron-logo.gif" alt="nortron-logo" />
+        </a>
+        <br />
+        <a href="#" class="footer__ssl">
+          About SSL <br />
+          Certificates
+        </a>
+      </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://use.fontawesome.com/2d8786e9cd.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

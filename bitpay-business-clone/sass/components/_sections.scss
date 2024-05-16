@@ -1,0 +1,1115 @@
+/* === HERO SECTION === */
+@keyframes float {
+  0% {
+    transform: translateY(30px);
+  }
+
+  50% {
+    transform: translateY(48px);
+  }
+
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+.hero-section {
+  width: 90%;
+  max-width: 1400px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include respond(sm) {
+    margin: 30% auto;
+  }
+
+  @include respond(lg) {
+    margin: 13% auto;
+  }
+
+  &__text {
+    padding: 4rem 2rem 4rem 3rem;
+    margin-left: 1rem;
+
+    @include respond(sm) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @include respond(lg) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    h1 {
+      @include respond(sm) {
+        font-size: 5.5rem;
+      }
+
+      @include respond(md) {
+        font-size: 6.25rem;
+      }
+
+      @include respond(md) {
+        font-size: 5.25rem;
+      }
+
+      span.typeWriter {
+        color: $classic-blue;
+      }
+
+      span.cursor {
+        color: $classic-blue;
+      }
+    }
+
+    &__lead {
+      margin: 6rem 0;
+
+      p {
+        margin-bottom: 1.75rem;
+        color: #565d6d;
+
+        @include respond(sm) {
+          font-size: 1.75rem;
+        }
+
+        @include respond(md) {
+          font-size: 2rem;
+        }
+
+        @include respond(md) {
+          font-size: 1.8rem;
+        }
+      }
+
+      img {
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+        margin-right: 1rem;
+      }
+    }
+
+    &__cta {
+      font-weight: 600;
+      color: $primary-color;
+
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(md) {
+        font-size: 1.8rem;
+        display: block;
+      }
+
+      img {
+        transition: all 220ms;
+        height: 15px;
+        width: 15px;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
+
+      &:hover {
+        color: darken($color: $primary-color, $amount: 10);
+
+        img {
+          transform: translateX(5px);
+        }
+      }
+    }
+
+    &__btns {
+      display: flex;
+      margin-top: 4rem;
+
+      @include respond(sm) {
+        flex-direction: column;
+
+        .btn {
+          &:first-child {
+            margin-right: 0 !important;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+
+      @include respond(md) {
+        flex-direction: row;
+
+        .btn {
+          padding: 2rem 4rem;
+          font-weight: bold;
+
+          &:first-child {
+            margin-right: 2rem !important;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__invoice {
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-grow: 1;
+
+    @include respond(sm) {
+      display: none;
+    }
+
+    @include respond(lg) {
+      display: block;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2rem;
+
+    &__big {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent url(/img/iso-grid.svg) no-repeat;
+      background-size: contain;
+
+      @include respond(sm) {
+        height: 400px;
+        width: 400px;
+        margin-top: 6rem;
+      }
+
+      @include respond(xl) {
+        height: 620px;
+        width: 95%;
+        margin-top: 0;
+      }
+
+      &__pattern {
+        position: absolute;
+        z-index: 2;
+        width: 14.880952vw;
+        max-width: 255px;
+        min-width: 225px;
+        height: 23.880952vh;
+        max-height: 360.641px;
+        min-height: 360.641px;
+        margin-left: 7.8vw;
+        margin-top: -2vw;
+        border-radius: 5px;
+
+        @include respond(sm) {
+          display: none;
+        }
+
+        @include respond(xl) {
+          display: block !important;
+        }
+      }
+
+      &__checkout {
+        position: absolute;
+        z-index: 3;
+        width: 25vw;
+        max-width: 430px;
+        min-width: 375px;
+        height: 24.8685vw;
+        max-height: 530.9382px;
+        min-height: 463.0275px;
+        margin-left: 2.25vw;
+        box-shadow: 2px 20px 50px 0 rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
+
+        @include respond(sm) {
+          display: none;
+        }
+
+        @include respond(xl) {
+          display: block;
+        }
+      }
+
+      &__invoice {
+        position: absolute;
+        z-index: 4;
+        width: 20.5vw;
+        min-width: 300px;
+        max-width: 400px;
+        height: 24.13465vw;
+        max-height: 470.92px;
+        min-height: 353.19px;
+        margin-left: 5vw;
+        border-radius: 10px;
+        will-change: transform;
+        animation: float 3.7s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+        filter: drop-shadow(0 5px 30px rgba(8, 17, 37, 0.15));
+      }
+    }
+  }
+}
+
+/* === TESTIMONIAL SECTION === */
+.testimonial-section {
+  max-width: 1680px;
+  margin: 10% auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(sm) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  @include respond(lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__background-sm {
+    width: 100%;
+    height: 300px;
+    left: 0;
+    background: url(/img/bauhaus-pattern-5.ed2a1b0.svg) no-repeat;
+    background-size: 75% auto;
+    position: relative;
+    margin-bottom: 16rem;
+
+    @include respond(sm) {
+      display: block;
+    }
+
+    @include respond(lg) {
+      display: none;
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 6px;
+      border-width: 0;
+      box-shadow: 2px 20px 50px 0 rgba(0, 0, 0, 0.07);
+      padding: 3rem;
+      top: 7vh;
+      right: -8rem;
+
+      .card-text--quotation {
+        position: absolute;
+        color: #565d6d;
+        font-size: 6rem;
+        font-weight: 400;
+      }
+
+      .card-text--break {
+        color: #565d6d;
+        font-weight: 300;
+        margin-top: 6rem;
+
+        @include respond(sm) {
+          font-size: 1.7rem;
+        }
+
+        @include respond(xl) {
+          font-size: 2rem;
+        }
+      }
+
+      .card-text--divider {
+        height: 1px;
+        background-color: #9b9b9b;
+        opacity: 0.2;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      .card-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 2rem 0;
+
+        &__title {
+          font-size: 1.6rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        &__subtitle {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-bottom: 1.5rem;
+        }
+
+        &__avatar {
+          height: 25px;
+          width: auto;
+        }
+
+        &__arrow {
+          border: 0;
+          border-radius: 50%;
+          padding: 1.4rem;
+          cursor: pointer;
+          transition: background-color 220ms, transform 220ms;
+          background-color: lighten($color: $primary-color, $amount: 32);
+
+          &:hover {
+            background-color: lighten($color: $primary-color, $amount: 30);
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+
+          img {
+            height: 20px;
+            user-select: none;
+            width: 20px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  &__background {
+    flex: 0 0 50%;
+    max-width: 50%;
+    height: 750px;
+    background: url(/img/blue-crop.32a7489.jpg) no-repeat;
+    background-size: contain;
+    padding: 2rem;
+    margin-right: 4rem;
+
+    @include respond(sm) {
+      display: none;
+    }
+
+    @include respond(lg) {
+      display: block;
+    }
+
+    &__stagger {
+      position: relative;
+
+      float: right;
+
+      @include respond(lg) {
+        top: 20%;
+        right: -7vw;
+      }
+
+      @include respond(xl) {
+        top: 20%;
+        right: 0;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 2rem 4rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+        box-shadow: 2px 20px 50px 0 rgba(0, 0, 0, 0.14);
+        width: 28.46153846vw;
+        max-width: 500px;
+        height: auto;
+        border-width: 0;
+
+        .card-text--quotation {
+          position: absolute;
+          color: #565d6d;
+          font-size: 6rem;
+          font-weight: 400;
+        }
+
+        .card-text--break {
+          color: #565d6d;
+          font-weight: 300;
+          margin-top: 6rem;
+
+          @include respond(sm) {
+            font-size: 1.7rem;
+          }
+
+          @include respond(xl) {
+            font-size: 2rem;
+          }
+        }
+
+        .card-text--divider {
+          height: 1px;
+          background-color: #9b9b9b;
+          opacity: 0.2;
+          width: 100%;
+          margin: 2rem auto;
+        }
+
+        .card-bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin: 2rem 0;
+
+          &__title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+
+          &__subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+          }
+
+          &__avatar {
+            height: 25px;
+            width: auto;
+          }
+
+          &__arrow {
+            border: 0;
+            border-radius: 50%;
+            padding: 1.4rem;
+            cursor: pointer;
+            transition: background-color 220ms, transform 220ms;
+            background-color: lighten($color: $primary-color, $amount: 32);
+
+            &:hover {
+              background-color: lighten($color: $primary-color, $amount: 30);
+            }
+
+            &:active {
+              transform: scale(0.95);
+            }
+
+            img {
+              height: 20px;
+              user-select: none;
+              width: 20px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 5vw;
+
+    h1 {
+      font-size: 4rem;
+      max-width: 450px;
+      margin-bottom: 3rem;
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $primary-color;
+      transition: color 220ms;
+      margin-bottom: 4rem;
+
+      &:hover {
+        color: darken($color: $primary-color, $amount: 20);
+      }
+
+      img {
+        height: 32px;
+        width: 32px;
+        vertical-align: bottom;
+        margin-right: 1rem;
+      }
+    }
+
+    &__companies {
+      max-width: 365px;
+
+      &__box {
+        display: inline-flex;
+        width: 100%;
+        margin: 1.5rem 0;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          cursor: pointer;
+          vertical-align: middle;
+          filter: grayscale(100);
+        }
+      }
+    }
+  }
+}
+
+/* === BUSINESS DECK SECTION === */
+.business-deck-section {
+  margin: 15% 0;
+
+  h1 {
+    
+    text-align: center;
+    margin-bottom: 5rem;
+
+    @include respond(sm) {
+      font-size: 3rem;
+    }
+    
+    @include respond(md) {
+      font-size: 4rem;
+    }
+
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+
+    @include respond(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include respond(md) {
+      flex-direction: row;
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      transition: transform 220ms;
+      padding: 4rem 2rem;
+      margin: 0 1.5rem;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      border-width: 0;
+      box-shadow: 2px 20px 50px 0 rgba(0, 0, 0, 0.11);
+      
+
+      @include respond(sm) {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+  
+      @include respond(md) {
+        width: 276px;
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: #565d6d;
+        margin-bottom: 4rem;
+      }
+
+      a {
+        font-size: 1.6rem;
+        color: $primary-color;
+        font-weight: bold;
+
+        img {
+          height: 16px;
+          width: 16px;
+          vertical-align: middle;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* === BUSINESS SETTLEMENTS SECTION === */
+.business-settlements {
+  width: 85%;
+  max-width: 1450px;
+  margin: 18rem auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include respond(sm) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  @include respond(lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 5rem;
+
+      a.tween-text {
+        font-size: inherit;
+        color: #4f6ef7;
+        border-bottom: 2px solid #4f6ef7;
+        transition: color 220ms;
+
+        &:hover {
+          color: $classic-blue;
+        }
+      }
+    }
+
+    p {
+      img {
+        margin-right: 1rem;
+      }
+
+      display: inline-flex;
+      align-items: flex-start;
+      font-size: 1.8rem;
+      max-width: 380px;
+      margin-bottom: 4rem;
+    }
+
+    &__cta {
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(md) {
+        display: block;
+      }
+    }
+
+    a {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $primary-color;
+      transition: color 220ms;
+
+      &:hover {
+        color: darken($color: $primary-color, $amount: 20);
+
+        img {
+          transform: translateX(5px);
+        }
+      }
+
+      img {
+        height: 14px;
+        width: 14px;
+        vertical-align: middle;
+        margin: 0 1rem;
+        transition: transform 220ms;
+      }
+    }
+  }
+
+  &__image {
+    @include respond(sm) {
+      img {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include respond(md) {
+      img {
+        padding: 10%;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    @include respond(lg) {
+      img {
+        width: 48vw;
+        max-width: 800px;
+      }
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+    }
+  }
+}
+
+/* === BUSINESS STATS === */
+@keyframes bubbleJiggle {
+  0% {
+    transform: scaleX(1);
+  }
+
+  25% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scale3d(1.175, 1.175, 1.175);
+  }
+
+  75% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes bubbleBurst {
+  0% {
+    transform: scale3d(0, 0, 0);
+    opacity: 0;
+  }
+
+  5% {
+    transform: scale3d(1.2, 1.2, 1.2);
+    opacity: 1;
+  }
+
+  65% {
+    opacity: 0.65;
+  }
+
+  to {
+    transform: scale3d(8, 8, 8);
+    opacity: 0;
+  }
+}
+
+.business-stats {
+  max-width: 1700px;
+  margin: 15rem auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  overflow-x: hidden;
+
+  @include respond(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include respond(lg) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__image {
+    @include respond(sm) {
+      height: 350px;
+    }
+
+    @include respond(lg) {
+      height: 460px;
+      flex: 0 0 58%;
+      max-width: 58%;
+    }
+
+    position: relative;
+    width: 100%;
+    background: url(/img/map-dot-matrix.d0a2208.svg) no-repeat;
+    background-size: 100%;
+
+    .bubble {
+      position: absolute;
+      min-width: 8px;
+      min-height: 8px;
+      background-color: #ed69ab;
+      border-radius: 50%;
+      animation: bubbleJiggle 3s ease infinite;
+
+      &--spread {
+        background-color: #fbd2fb;
+        animation: bubbleBurst 3s linear infinite;
+      }
+    }
+
+    .card {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.25rem;
+      border-width: 0;
+      box-shadow: 2px 20px 50px 0 rgba(0, 0, 0, 0.07);
+      min-height: 286px;
+      width: 321px;
+      transition: transform 420ms;
+
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(md) {
+        display: block;
+        transform: scale(0.8);
+        cursor: pointer;
+        padding: 3rem;
+      }
+      
+      @include respond(xl) {
+        display: block;
+        transform: unset;
+        cursor: default;
+        padding: 2rem;
+      }
+
+      &--left {
+        @include respond(sm) {
+          top: 3vw;
+          left: 20vw;
+        }
+
+        @include respond(md) {
+          top: 3vw;
+          left: 20vw;
+        }
+
+        @include respond(lg) {
+          top: 2.2857142857vw;
+          left: 9vw;
+        }
+
+        @include respond(xl) {
+          top: 2.857142857142857vw;
+          left: 12vw;
+        }
+      }
+
+      &--right {
+        @include respond(sm) {
+          top: 19vw;
+          left: 45vw;
+        }
+
+        @include respond(md) {
+          top: 19vw;
+          left: 45vw;
+        }
+
+        @include respond(lg) {
+          top: 17.7142857143vw;
+          left: 23vw;
+        }
+
+        @include respond(xl) {
+          top: 10.761904761904762vw;
+          left: 30vw;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      p {
+        font-size: 2.25rem;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 4rem;
+        margin: 2rem 0 0 1rem;
+      }
+
+      span.card-tag {
+        font-size: 1.6rem;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 0.2rem 0.5rem;
+
+        &.float-left {
+          float: left;
+        }
+
+        &.float-right {
+          float: right;
+        }
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 1.5rem;
+    flex: 1;
+
+    @include respond(sm) {
+      margin-left: 3rem;
+      margin-top: 0;
+    }
+
+    @include respond(md) {
+      margin-top: 4rem;
+      margin-left: 8rem;
+    }
+
+    h1 {
+      margin-bottom: 4rem;
+
+      @include respond(sm) {
+        font-size: 3rem;
+      }
+
+      @include respond(md) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      img {
+        margin-right: 1rem;
+      }
+
+      display: inline-flex;
+      align-items: flex-start;
+      font-size: 1.8rem;
+      max-width: 380px;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+/* === GET STARTED === */
+.get-started {
+  padding: 15%;
+  background: linear-gradient(45deg, rgb(32, 32, 54) 25%, rgb(26, 59, 139));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    max-width: 360px;
+    text-align: center;
+    opacity: 0.75;
+  }
+
+  &__btns {
+    margin: 4rem 0;
+    display: flex;
+
+    @include respond(sm) {
+      flex-direction: column;
+
+      a {
+        display: block;
+        width: 300px;
+      }
+    }
+
+    @include respond(lg) {
+      flex-direction: row;
+
+      a {
+        width: auto;
+      }
+    }
+
+    a {
+      padding: 1.8rem 3rem;
+
+      &:first-child {
+        margin-right: 2rem;
+        color: #fff;
+      }
+
+      &:last-child {
+        &:hover {
+          background-color: transparent;
+          border-color: lighten($color: $primary-color, $amount: 20);
+        }
+      }
+    }
+  }
+
+  a {
+    color: $primary-color;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+
+    &:hover {
+      color: lighten($color: $primary-color, $amount: 20);
+
+      img {
+        transform: translateX(5px);
+      }
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+      margin-left: 0.5rem;
+      transition: transform 220ms;
+    }
+  }
+}

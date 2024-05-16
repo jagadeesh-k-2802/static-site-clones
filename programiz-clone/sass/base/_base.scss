@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem == 10px
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Euclid Circular A', 'Helvetica', 'Arial', sans-serif;
+  color: $bluish-grey-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $bluish-black-text;
+}

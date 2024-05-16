@@ -1,0 +1,55 @@
+.btn {
+  border-radius: 20rem;
+  text-transform: uppercase;
+  padding: 0.75rem 3.25rem;
+  background-color: transparent;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transition: color 200ms, background-color 300ms, transform 200ms;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--red-green {
+    background-color: #65d49a;
+    color: #fff;
+
+    &:hover {
+      background-color: $red-color;
+    }
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      color: #8040a6;
+      background-color: #fff;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #8040a6;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+
+  &--ghost-green {
+    border: 2px solid #65d49a;
+    color: #65d49a;
+
+    &:hover {
+      background-color: #65d49a;
+      color: #fff;
+    }
+  }
+}

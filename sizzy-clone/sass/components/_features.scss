@@ -1,0 +1,49 @@
+.features {
+  background: $radial-gradient;
+  margin-bottom: 8rem;
+  color: #fff;
+  padding: 5rem 22rem;
+  position: relative;
+
+  &__list {
+    margin-top: 15rem;
+    @include flex-box-center(column);
+    list-style: none;
+    margin-bottom: 10rem;
+  }
+
+  .item__text {
+    width: 88%;
+  }
+
+  .item__video {
+    video {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+
+  .list__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .item__heading {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .item__desc {
+    font-size: 1.8rem;
+    color: #cbd5ff;
+    line-height: 27px;
+  }
+}

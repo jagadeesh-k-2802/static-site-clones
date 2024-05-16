@@ -1,0 +1,49 @@
+// TRUST
+
+.trust-section {
+  display: flex;
+  padding: 5rem 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .text__heading {
+    font-size: 1.2rem;
+    color: rgba(11, 37, 75, 0.5);
+    text-transform: uppercase;
+    word-spacing: 0.4rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+
+  .companies__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #triplebyte {
+      width: 150px;
+    }
+
+    &-item:not(:first-child) {
+      margin-left: 6rem;
+
+      #trusk {
+        width: 82px;
+      }
+
+      #side {
+        width: 72px;
+      }
+
+      #mailjet {
+        width: 97px;
+      }
+
+      img {
+        width: 130px;
+      }
+    }
+  }
+}

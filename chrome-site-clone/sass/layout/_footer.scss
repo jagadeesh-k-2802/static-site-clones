@@ -1,0 +1,224 @@
+%footer-link {
+  font-size: 1.5rem;
+  color: $color-grey-1;
+  margin-right: 2rem;
+}
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  &__social-links {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(218, 220, 224);
+    padding: 2rem 0;
+
+    p {
+      font-size: 1.65rem;
+      margin-right: 2rem;
+      font-family: 'Product Sans Regular';
+      color: $color-grey-1;
+    }
+
+    &__links {
+      list-style-type: none;
+      display: flex;
+
+      &__link {
+        a {
+          border-radius: 50%;
+          display: inline-block;
+          padding: 1rem;
+          margin-right: 1rem;
+
+          &:active {
+            background-color: #eee;
+          }
+
+          svg {
+            height: 2.5rem;
+            width: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__links {
+    padding: 7rem 0;
+
+    &__list {
+      display: flex;
+      list-style-type: none;
+
+      &__item {
+        flex: 1;
+
+        &__title {
+          font-size: 1.8rem;
+          color: $color-grey-1;
+          font-family: 'Product Sans Regular';
+          font-weight: 400;
+          margin-bottom: 1rem;
+        }
+
+        svg {
+          display: none;
+        }
+
+        &__links {
+          list-style-type: none;
+
+          &__link {
+            a {
+              @extend %footer-link;
+              display: inline-block;
+              margin: 1.25rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(218, 220, 224);
+    align-items: center;
+    padding: 4rem 0;
+
+    &__google {
+      svg {
+        fill: $color-grey-1;
+        width: 8.5rem;
+      }
+    }
+
+    &__links {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+
+      &__link {
+        a {
+          @extend %footer-link;
+        }
+      }
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+
+      &__help {
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 5px;
+        color: $color-grey-1;
+        margin-right: 2rem;
+
+        svg {
+          height: 2.45rem;
+          width: 2.45rem;
+          margin-right: 1rem;
+        }
+
+        &:active {
+          background-color: #eee;
+        }
+      }
+
+      &__lang {
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 8px;
+          right: 0;
+        }
+
+        select {
+          background-color: transparent;
+          appearance: none;
+          border: 0;
+          color: $color-grey-1;
+          font-family: inherit;
+          font-size: 1.5rem;
+          padding: 10px 80px 10px 10px;
+
+          &:focus {
+            outline: none;
+            background-color: #eee;
+          }
+
+          &:active {
+            background-color: #eee;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(md) {
+    &__links {
+      padding: 0;
+
+      &__list {
+        flex-direction: column;
+
+        &__item {
+          padding: 1.8rem 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          svg {
+            display: block;
+            transition: transform 250ms;
+            transform: rotate(0deg);
+            height: 2.5rem;
+            width: 2.5rem;
+          }
+
+          &--expanded {
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+
+          &__title {
+            font-size: 1.5rem;
+            margin-top: 0.6235rem;
+          }
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgb(218, 220, 224);
+          }
+
+          &__links {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      &__links {
+        flex-wrap: wrap;
+      }
+
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

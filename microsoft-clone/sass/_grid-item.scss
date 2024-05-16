@@ -1,0 +1,59 @@
+// GRID ITEMS
+
+.grid__list {
+  list-style: none;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+
+  .grid__list-item {
+    max-width: 30rem;
+
+    .list-item__container {
+      cursor: pointer;
+      display: inline-flex;
+      flex-direction: column;
+
+      .list-item__image {
+        width: 30rem;
+        height: 18rem;
+        margin-bottom: 2.5rem;
+
+        &:hover {
+          opacity: 0.93;
+        }
+      }
+
+      .list-item__title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .list-item__para {
+        font-size: 1.5rem;
+        margin-bottom: 1.4rem;
+      }
+
+      .list-item__ctas {
+        display: inline-flex;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: #0067b8;
+          font-weight: 600;
+          font-size: 1.5rem;
+
+          &:hover {
+            border-bottom: 2px solid #0067b8;
+          }
+
+          @include animate-chevron();
+        }
+      }
+    }
+  }
+}

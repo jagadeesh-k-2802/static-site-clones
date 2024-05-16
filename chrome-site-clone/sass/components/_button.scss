@@ -1,0 +1,31 @@
+.btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 100ms;
+  padding: 14px 28px;
+  border-radius: 1px;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  &--blue {
+    color: #fff;
+    background-color: rgb(26, 115, 232);
+
+    &:hover {
+      background-color: rgb(23, 78, 166);
+    }
+  }
+
+  &--ghost {
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: 'Product Sans Regular';
+    font-weight: 500;
+
+    &:hover {
+      color: rgb(23, 78, 166);
+      background-color: #fff;
+    }
+  }
+}

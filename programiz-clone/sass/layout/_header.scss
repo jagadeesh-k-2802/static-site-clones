@@ -1,0 +1,183 @@
+.header {
+  box-shadow: 0px 4px 12px rgba(37, 38, 94, 0.06);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  transition: all 0.25s ease-in;
+
+  &.hide-notice {
+    margin-top: -45px;
+  }
+
+  &__notice {
+    padding: 1.3rem 0;
+    border-bottom: 1px solid #d3dce6;
+
+    @include respond(sm) {
+      display: none;
+    }
+
+    @include respond(md) {
+      display: block;
+    }
+  }
+
+  &__notice__container {
+    &__badge {
+      background-color: $orange;
+      font-weight: bold;
+      padding: 3px;
+      border-radius: 3px;
+      margin-right: 0.5rem;
+    }
+
+    &__link {
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      color: $bright-blue;
+      font-weight: 500;
+
+      &:hover {
+        color: darken($bright-blue, $amount: 40);
+      }
+
+      svg {
+        width: 20px;
+        height: 18px;
+        stroke: currentColor;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+    }
+  }
+
+  &__nav {
+    height: 72px;
+
+    @include respond(sm) {
+      height: 60px;
+    }
+  }
+
+  &__nav__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &__small-logo {
+      height: 28px;
+      width: 28px;
+      margin-left: 0.8rem;
+
+      @include respond(sm) {
+        display: block;
+      }
+
+      @include respond(lg) {
+        display: none;
+      }
+    }
+
+    &__menu {
+      width: 30px;
+      height: 30px;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      cursor: pointer;
+
+      @include respond(sm) {
+        display: block;
+      }
+
+      @include respond(lg) {
+        display: none;
+      }
+    }
+
+    &__logo {
+      height: 100px;
+      width: 85px;
+      margin-bottom: 8px;
+
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(lg) {
+        display: block;
+      }
+    }
+
+    &__dropdown-trigger {
+      align-items: center;
+      color: $bluish-black-text;
+      font-size: 1.4rem;
+      margin-left: 3.5rem;
+
+      svg {
+        width: 13px;
+        height: 18px;
+        stroke: currentColor;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      @include respond(sm) {
+        display: none;
+      }
+
+      @include respond(lg) {
+        display: inline-flex;
+      }
+    }
+
+    &__search-btn {
+      border: 0;
+      background-color: transparent;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 25px;
+        height: 25px;
+        stroke: #a8a8bf;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      @include respond(sm) {
+        margin-left: 0.8rem;
+      }
+
+      @include respond(lg) {
+        margin-left: 3.5rem;
+      }
+    }
+
+    &__search {
+      margin-left: 1.5rem;
+      border: 0;
+      font-size: 1.6rem;
+      width: 100%;
+
+      &::placeholder {
+        color: #a8a8bf;
+      }
+    }
+  }
+}

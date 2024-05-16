@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @include respond(sm) {
+    font-size: 56%;
+  }
+
+  @include respond(md) {
+    font-size: 57%;
+  }
+
+  @include respond(lg) {
+    font-size: 59%;
+  }
+
+  @include respond(xl) {
+    font-size: 62.5%; // 1rem == 10px
+  }
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}

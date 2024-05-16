@@ -1,0 +1,35 @@
+// Font Weight 700
+@font-face {
+  font-family: 'aktiv-grotsek';
+  font-style: normal;
+  font-weight: 700;
+  src: local('aktiv-grotsek'),
+    url('../../fonts/aktiv-grotesk-w-bd.woff2') format('woff2');
+}
+
+// Font Weight 400
+@font-face {
+  font-family: 'aktiv-grotsek';
+  font-style: normal;
+  font-weight: normal;
+  src: local('aktiv-grotsek'),
+    url('../../fonts/aktiv-grotesk-w-rg.woff2') format('woff2');
+}
+
+// Font Weight 300
+@font-face {
+  font-family: 'aktiv-grotsek';
+  font-style: normal;
+  font-weight: 300;
+  src: local('aktiv-grotsek'),
+    url('../../fonts/aktiv-grotesk-w-lt.woff2') format('woff2');
+}
+
+// Font Weight 200
+@font-face {
+  font-family: 'aktiv-grotsek';
+  font-style: normal;
+  font-weight: 300;
+  src: local('aktiv-grotsek'),
+    url('../../fonts/AktivGrotesk_W_Th.woff') format('woff2');
+}

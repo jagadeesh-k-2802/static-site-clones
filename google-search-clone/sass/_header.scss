@@ -1,0 +1,46 @@
+// HEADER
+
+.main-header {
+  padding: 1rem;
+
+  &__nav {
+    &__list {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__item {
+        margin-right: 1rem;
+
+        a {
+          text-decoration: none;
+          color: #000000de;
+          font-size: 0.8rem;
+
+          img {
+            border-radius: 50%;
+            &:hover {
+              box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.3);
+            }
+          }
+
+          .material-icons {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &__img {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+  }
+}

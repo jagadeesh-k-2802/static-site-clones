@@ -1,0 +1,75 @@
+.dashboard-section {
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  color: #fdfdfd;
+  padding: 5rem 4rem 0 4rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    .text__heading {
+      @include logrocket-museo-sans(300);
+      font-size: 3.2rem;
+      line-height: 5.6rem;
+      text-align: center;
+      width: 60%;
+    }
+  }
+
+  &__diagram {
+    display: flex;
+    justify-content: center;
+    padding: 0 7rem;
+
+    .diagram__image {
+      width: 72.5rem;
+      margin-bottom: -1.5rem;
+    }
+
+    .diagram__left,
+    .diagram__right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .diagram__left {
+      .diagram__feature {
+        .feature__desc {
+          width: 85%;
+        }
+      }
+    }
+
+    .diagram__right {
+      .diagram__feature {
+        text-align: right;
+      }
+    }
+
+    .diagram__feature {
+      border-top: 3px solid #fdfdfd;
+      margin: 2rem 3rem;
+    }
+
+    .feature__heading {
+      @include logrocket-museo-sans(300);
+      font-size: 2.1rem;
+      line-height: 4rem;
+    }
+
+    .feature__desc {
+      @include logrocket-avenir(400);
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+}

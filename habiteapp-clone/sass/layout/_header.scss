@@ -1,0 +1,203 @@
+.header {
+  margin: 1.95rem 0;
+  padding: 0.8rem 0;
+
+  .wrapper__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav__logo {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    .nav__list {
+      display: flex;
+      list-style: none;
+
+      .list__item {
+        margin-right: 4.25rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .item__link {
+          color: $primary-color;
+          text-transform: uppercase;
+          font-size: 1.4rem;
+          font-weight: 600;
+          transition: color 400ms;
+
+          &:hover {
+            color: $black-text;
+          }
+        }
+      }
+    }
+
+    // Mobile Menu Btn
+    .nav__menu-btn {
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      display: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      .menu-btn__bar {
+        display: block;
+        padding: 2px;
+        height: 2px;
+        width: 25px;
+        background-color: $primary-color;
+        margin-bottom: 5px;
+      }
+
+      &--show {
+        position: relative;
+
+        .menu-btn__bar {
+          transition: all 500ms;
+
+          &:first-child {
+            transform: rotate(-45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            position: absolute;
+            transform: rotate(45deg);
+            bottom: 8.5px;
+          }
+        }
+      }
+
+      &--collapsing {
+        position: relative;
+
+        .menu-btn__bar {
+          transition: all 500ms;
+
+          &:first-child {
+            transform: rotate(0deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 1;
+          }
+
+          &:last-child {
+            position: unset;
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper__mobile-nav {
+    display: none;
+    list-style: none;
+    max-height: 34rem;
+    overflow-y: scroll;
+    margin-top: 2rem;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding-bottom: 2rem;
+
+    .list__item {
+      border-bottom: 1px solid rgba(237, 237, 237, 0.2);
+      margin-bottom: 2rem;
+      padding: 1px;
+
+      .item__link {
+        font-size: 1.5rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: color 500ms;
+
+        &:hover {
+          color: $black-text;
+        }
+      }
+    }
+
+    &--show {
+      display: block;
+      animation: slide-down 300ms;
+      transform-origin: top;
+    }
+
+    &--collapsing {
+      display: block;
+      animation: slide-up 300ms;
+      transform-origin: top;
+    }
+  }
+
+  // MEDIA QUERIES
+  @include respond(xl) {
+    .wrapper__nav {
+      .nav__list {
+        .list__item {
+          margin-right: 2.45rem;
+        }
+      }
+    }
+  }
+
+  @include respond(lg) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .wrapper__nav {
+      .nav__list {
+        display: none;
+      }
+
+      .nav__menu-btn {
+        display: block;
+      }
+    }
+  }
+
+  @include respond(sm) {
+    margin: 2rem 0;
+    padding: 0;
+  }
+}
+
+// Animated Header
+.sticky-header {
+  width: 100%;
+  animation: fade-from-top 550ms;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 50;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 16px 0px;
+
+  // Animate Child Elements
+  & > * {
+    animation: fade-from-top 600ms;
+
+    // Disable Animation For Child Elements In Mobile And Tablet Mode
+    @include respond(lg) {
+      animation: none;
+    }
+  }
+}

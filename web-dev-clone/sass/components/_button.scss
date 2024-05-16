@@ -1,0 +1,51 @@
+%btn-after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  padding: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  transition: all 100ms;
+  position: relative;
+
+  &:hover {
+    &::after {
+      @extend %btn-after;
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  &--blue {
+    background-color: $color-blue;
+    color: #fff;
+  }
+
+  &--ghost {
+    background-color: #fff;
+    color: $color-grey-1;
+    border: 1px solid #dadce0;
+  }
+
+  &--blue-outline {
+    color: $color-blue;
+
+    &:hover {
+      &::after {
+        @extend %btn-after;
+        background-color: rgba(231, 232, 255, 0.35);
+      }
+    }
+  }
+}

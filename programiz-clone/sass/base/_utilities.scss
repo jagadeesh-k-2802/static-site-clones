@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include respond(sm) {
+    max-width: 540px;
+  }
+
+  @include respond(md) {
+    max-width: 720px;
+  }
+
+  @include respond(lg) {
+    max-width: 960px;
+  }
+
+  @include respond(xl) {
+    max-width: 1200px;
+  }
+}

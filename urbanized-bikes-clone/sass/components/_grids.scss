@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+  @include respond(sm) {
+    &-sm {
+      &-2x2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @include respond(md) {
+    &-md {
+      &-2x2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+
+      &-ax2 {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @include respond(lg) {
+    &-lg {
+      &-ax4 {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1170px) {
+    &-1170 {
+      &-ax3 {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}

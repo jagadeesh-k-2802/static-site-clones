@@ -1,0 +1,48 @@
+/*
+  MEDIA QUERY SIZES
+  =================
+* FROM 0 - 576 => sm
+* FROM 576 - 768 => md
+* FROM 768 - 992 => lg
+* FROM 1200 - ∞ => xl
+* Normal Styles Applies For All
+*/
+
+@mixin respond($breakpoint) {
+  // Guard Clause
+  @if $breakpoint !=
+    sm and
+    $breakpoint !=
+    md and
+    $breakpoint !=
+    lg and
+    $breakpoint !=
+    xl
+  {
+    @error '$breakpoint should be either sm, md, lg or xl';
+  }
+
+  @if $breakpoint == sm {
+    @media only screen and (min-width: 0) and (max-width: $breakpoint-sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == md {
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == lg {
+    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xl {
+    @media only screen and (min-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}

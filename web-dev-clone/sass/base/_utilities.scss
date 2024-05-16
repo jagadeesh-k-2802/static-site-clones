@@ -1,0 +1,28 @@
+// Section
+.section {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  color: $color-grey-2;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.section-body {
+  text-align: center;
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+
+  @include respond(sm) {
+    padding: 0 1rem;
+  }
+}

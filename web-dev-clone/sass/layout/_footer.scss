@@ -1,0 +1,156 @@
+%footer-link {
+  display: inline-block;
+  color: $color-grey-1;
+  width: 100%;
+  padding: 1.6rem 2rem 1.6rem 0;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.footer {
+  padding: 2rem;
+
+  &__nav {
+    &__list {
+      list-style-type: none;
+      display: flex;
+
+      &__item {
+        flex: 1;
+
+        &__title {
+          color: $color-grey-1;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-bottom: 1rem;
+        }
+
+        &__links {
+          list-style-type: none;
+
+          &__link {
+            a {
+              display: inline-block;
+              color: $color-grey-1;
+              width: 100%;
+              padding: 1.6rem 2rem 1.6rem 0;
+              font-size: 1.4rem;
+
+              &:hover {
+                color: $color-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__nav-google-dev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin: 2rem 0;
+    border-top: 1px solid rgb(218, 220, 224);
+    border-bottom: 1px solid rgb(218, 220, 224);
+
+    &__links {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+
+      &__link {
+        a {
+          @extend %footer-link;
+          margin-right: 1rem;
+        }
+
+        &:first-of-type {
+          img {
+            width: 18rem;
+          }
+        }
+      }
+    }
+
+    &__select {
+      font-family: inherit;
+      padding: 1rem 2.25rem 1rem 1.15rem;
+      border: 1px solid rgb(218, 220, 255);
+      appearance: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        border: 1px solid #000;
+      }
+    }
+  }
+
+  &__nav-conditions {
+    &__links {
+      list-style-type: none;
+      display: flex;
+
+      &__link {
+        a {
+          @extend %footer-link;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__license {
+    margin: 3rem 0 1rem 0;
+    font-size: 1.22rem;
+    max-width: 65%;
+    line-height: 1.777;
+
+    a {
+      color: $color-blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include respond(md) {
+    &__nav {
+      &__list {
+        flex-direction: column;
+
+        &__item {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    &__nav-google-dev {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__nav-conditions {
+      &__links {
+        flex-direction: column;
+      }
+    }
+
+    &__license {
+      max-width: 90%;
+    }
+  }
+}

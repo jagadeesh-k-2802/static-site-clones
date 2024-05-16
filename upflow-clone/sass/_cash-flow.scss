@@ -1,0 +1,78 @@
+// Cash Flow
+
+$greyish-white: rgb(244, 248, 255);
+
+.cash-flow {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: $padding-horizontal;
+  margin-top: 5rem;
+
+  &__image {
+    background-color: $greyish-white;
+    height: 48rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .image {
+      width: 50rem;
+    }
+
+    .image-float {
+      bottom: 0.8rem;
+      right: -6.2rem;
+      position: absolute;
+      width: 28rem;
+    }
+  }
+
+  .text__heading {
+    font-size: 3.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+
+  .text__description {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: $navy-blue-light;
+    margin-bottom: 2.2rem;
+  }
+
+  .text__list {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+
+    &__item {
+      display: flex;
+      margin-bottom: 2.2rem;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .text__link {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 1.6rem;
+
+    svg {
+      transition: transform 200ms;
+    }
+
+    &:hover {
+      svg {
+        transform: translateX(3px);
+      }
+    }
+  }
+}

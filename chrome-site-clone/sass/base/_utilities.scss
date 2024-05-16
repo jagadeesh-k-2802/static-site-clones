@@ -1,0 +1,139 @@
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10rem 6rem;
+
+  &--split {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  &--reverse {
+    & > *:first-of-type {
+      grid-area: 1 / 2;
+    }
+
+    .section__text {
+      margin-right: 0;
+    }
+
+    .section__img {
+      margin-right: 7rem;
+    }
+  }
+
+  &__text {
+    margin-right: 8rem;
+    flex: 1;
+    padding: 3rem;
+
+    &__icon {
+      height: 7rem;
+      width: 7rem;
+      margin-bottom: 1rem;
+    }
+
+    &__title {
+      font-size: 4rem;
+      font-family: 'Pro Sans Medium Reguler', sans-serif;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    &__body {
+      line-height: 1.6;
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+
+    &__link {
+      color: #1a73e8;
+      transition: color 200ms;
+      display: inline-flex;
+      align-items: center;
+      font-family: 'Product Sans Regular';
+      font-size: 1.6rem;
+
+      svg {
+        width: 2rem;
+        margin-left: 1rem;
+        transition: transform 200ms;
+        fill: #1a73e8;
+      }
+
+      &:hover {
+        color: #174ea6;
+
+        svg {
+          fill: #174ea6;
+          transform: translateX(3px);
+        }
+      }
+    }
+  }
+
+  &__img {
+    flex: 2;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @include respond(lg) {
+    padding: 5rem;
+
+    &__text {
+      padding: 0;
+
+      &__icon {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      &__title {
+        font-size: 3rem;
+      }
+
+      &__body {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @include respond(sm) {
+    grid-template: repeat(2, min-content) / 1fr;
+    padding: 5rem 2rem;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 3rem;
+
+      &__title {
+        text-align: center;
+        font-size: 2.4rem;
+        max-width: 100%;
+      }
+
+      &__body {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    &--reverse {
+      & > *:first-of-type {
+        grid-area: unset;
+      }
+
+      .section__img {
+        margin-right: 0;
+      }
+    }
+  }
+}

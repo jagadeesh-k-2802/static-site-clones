@@ -1,0 +1,32 @@
+// FAQ Section
+
+.faq-section {
+  @include flex-box-center(column);
+  margin-bottom: 5rem;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem 30rem;
+  }
+
+  &__list-item {
+    margin-bottom: 3rem;
+
+    .list-item__question {
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #000;
+    }
+
+    .list-item__answer {
+      font-weight: 300;
+      font-size: 1.6rem;
+      color: #1a202c;
+      line-height: 2.4rem;
+      line-break: inherit;
+    }
+  }
+}

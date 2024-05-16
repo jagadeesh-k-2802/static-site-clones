@@ -1,0 +1,35 @@
+// SOCIAL LINKS
+
+.social-links {
+  margin: 1.8rem 7rem;
+  margin-bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-right: 2.5rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    &-item {
+      margin-right: 1rem;
+
+      &-img {
+        height: 30px;
+        width: 30px;
+        padding: 1px;
+        background-color: #fff;
+
+        &:active {
+          outline: 1.8px solid #000;
+        }
+      }
+    }
+  }
+}

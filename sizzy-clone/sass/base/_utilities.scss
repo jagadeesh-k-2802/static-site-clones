@@ -1,0 +1,24 @@
+.text-link {
+  color: #877edc;
+  border-bottom: 1px dashed #877edc;
+  padding-bottom: 1px;
+}
+
+.clip-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: 5rem;
+}
+
+.clip-svg-invert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 5rem;
+  transform: rotate(180deg);
+}
+
+.hide {
+  display: none !important;
+}

@@ -1,0 +1,58 @@
+.main-footer {
+  background: $radial-gradient;
+  position: relative;
+  color: #fff;
+
+  @include flex-box-center(column);
+
+  &__text {
+    @include flex-box-center(column);
+
+    a {
+      font-size: 1.6rem;
+      margin-left: 1.8rem;
+      color: rgba(255, 255, 255, 0.64);
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 200ms;
+      padding-bottom: 1px;
+
+      &:hover {
+        border-bottom: 1px dashed rgb(118, 113, 151);
+      }
+    }
+
+    .text__heading {
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+      font-weight: 400;
+      margin-top: 10rem;
+      margin-bottom: 5rem;
+    }
+
+    .text__btn {
+      color: #fff;
+      padding: 18px;
+      border-radius: 5px;
+      font-size: 2.2rem;
+      background-color: rgba(255, 255, 255, 0.24);
+      margin-bottom: 6rem;
+      transition: background-color 220ms;
+
+      &:hover {
+        background-color: rgb(118, 114, 152);
+      }
+    }
+
+    .text__list {
+      display: flex;
+      list-style: none;
+      margin-bottom: 2.6rem;
+    }
+
+    .text__copyright-text {
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.64);
+      margin-bottom: 12rem;
+    }
+  }
+}

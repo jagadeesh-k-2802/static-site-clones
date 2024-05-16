@@ -1,0 +1,35 @@
+// GAME HERO
+
+.game-hero {
+  margin: 5rem 7rem;
+  background-image: url('/img/game-hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 55rem;
+
+  position: relative;
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    text-align: center;
+
+    .game-hero__title {
+      font-size: 4.6rem;
+      font-weight: 600;
+      margin-bottom: 1.8rem;
+      color: #000;
+    }
+
+    .game-hero__para {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .game-hero__ctas {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

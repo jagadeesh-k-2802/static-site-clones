@@ -1,0 +1,47 @@
+/*
+  MEDIA QUERY SIZES
+  =================
+* 0 - 600 => Phone
+* 600 - 768 => Tablet
+* 768 - 1024 => Desktop
+* 1024 + => Normal Styles
+*/
+
+@mixin respond($breakpoint) {
+  // Guard Clause
+  @if $breakpoint !=
+    phone and
+    $breakpoint !=
+    tablet and
+    $breakpoint !=
+    desktop and
+    $breakpoint !=
+    large-desktop
+  {
+    @error '$breakpoint should be either phone, tablet, desktop or large desktop';
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: $break-phone) {
+      @content;
+    } // 600px
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: $break-tablet) {
+      @content;
+    } // 768px
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: $break-desktop) {
+      @content;
+    } // 1024px
+  }
+
+  @if $breakpoint == large-desktop {
+    @media only screen and (min-width: 1024px) and (max-width: $break-large-desktop) {
+      @content;
+    } // 1800px
+  }
+}

@@ -1,0 +1,11 @@
+@mixin animate-chevron() {
+  .fa {
+    transition: transform 200ms;
+  }
+
+  &:hover {
+    .fa {
+      transform: translateX(5px);
+    }
+  }
+}

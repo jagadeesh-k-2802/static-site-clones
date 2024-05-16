@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <title>web.dev</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav id="sidebar" class="header__sidebar">
+        <div class="header__sidebar__container">
+          <div class="header__sidebar__container__header">
+            <button id="close" class="header__sidebar__container__header__menu">
+              <img src="/img/close-black-36dp.svg" alt="Close" />
+            </button>
+
+            <a href="/" class="header__sidebar__container__header__logo">
+              <img src="/img/logo.svg" alt="Logo" />
+            </a>
+          </div>
+
+          <ul class="header__sidebar__container__links">
+            <li class="header__sidebar__container__links__link">
+              <a href="#">Learn</a>
+            </li>
+            <li class="header__sidebar__container__links__link">
+              <a href="#">Measure</a>
+            </li>
+            <li class="header__sidebar__container__links__link">
+              <a href="#">Blog</a>
+            </li>
+            <li class="header__sidebar__container__links__link">
+              <a href="#">Live</a>
+            </li>
+            <li class="header__sidebar__container__links__link">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__left">
+        <button id="menu" class="header__left__menu">
+          <img src="/img/menu-black-36dp.svg" alt="Menu" />
+        </button>
+
+        <a href="/" class="header__left__logo">
+          <img src="/img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="header__middle">
+        <nav class="header__middle__nav">
+          <ul class="header__middle__nav__list">
+            <li class="header__middle__nav__list__item">
+              <a href="#">Learn</a>
+            </li>
+            <li class="header__middle__nav__list__item">
+              <a href="#">Measure</a>
+            </li>
+            <li class="header__middle__nav__list__item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="header__middle__nav__list__item">
+              <a href="#">Live</a>
+            </li>
+            <li class="header__middle__nav__list__item">
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__middle__search__container">
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="header__right">
+        <button class="header__right__signin">Sign In</button>
+      </div>
+    </header>
+
+    <!-- GOOGLE IS AGAINT RACIST -->
+    <section class="black-community">
+      <p>
+        Google is committed to advancing racial equity for Black communities.
+        <a rel="noreferer" href="www.google.com/racialequality">See how.</a>
+      </p>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <main class="hero-section__wrapper">
+        <div class="hero-section__wrapper__text">
+          <h1 class="hero-section__wrapper__text__title">
+            Let's build the future of the web
+          </h1>
+
+          <p class="hero-section__wrapper__text__body">
+            Get the web's modern capabilities on your own sites and apps with
+            useful guidance and analysis from web.dev.
+          </p>
+
+          <div class="hero-section__wrapper__text__btn-container">
+            <a href="#" class="btn btn--blue">Test My Site</a>
+            <a href="#" class="btn btn--ghost">Explore Topics</a>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- WEB LIVE SECTION -->
+    <section class="web-live-section">
+      <a href="#" class="web-live-section__img">
+        <img src="/img/banner.png" alt="Web.dev Live banner" />
+      </a>
+
+      <div class="web-live-section__body">
+        web.dev LIVE is now over! Head to
+        <a href="https://web.dev/live/">web.dev/live</a> to watch all the
+        sessions, top Q&A and more from our three day digital event for web
+        developers.
+      </div>
+    </section>
+
+    <!-- LATEST STORIES -->
+    <section class="stories-section section">
+      <h1 class="section-title">Latest Stories</h1>
+      <p class="section-body">
+        See our latest news, updates, and stories for developers.
+      </p>
+
+      <div class="grid grid--3">
+        <div class="card grid--3__featured">
+          <div class="card__cover-container">
+            <img src="/img/hero.png" alt="Card 1 Cover" />
+          </div>
+
+          <div>
+            <a href="#" class="card__card-title">
+              Ten modern layouts in one line of CSS
+            </a>
+
+            <div class="card__card-author">
+              <div class="card__card-author__avatar-container">
+                <img src="/img/una.jpg" alt="Person 1" />
+              </div>
+
+              <div class="card__card-author__details">
+                <p class="card__card-author__details__name">Una Kravets</p>
+                <time class="card__card-author__details__time"
+                  >Jul 7, 2020</time
+                >
+              </div>
+            </div>
+
+            <p class="card__card-body">
+              This post highlights a few powerful lines of CSS that do some
+              serious heavy lifting and help you build robust modern layouts.
+            </p>
+
+            <div class="card__card-chips">
+              <a href="#" class="chip">CSS</a>
+              <a href="#" class="chip">Layout</a>
+              <a href="#" class="chip">Mobile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__cover-container">
+            <img src="/img/pixels.jpg" alt="Card 2 Cover" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Pixel-perfect rendering with devicePixelContentBox
+          </a>
+
+          <div class="card__card-author">
+            <div class="card__card-author__avatar-container">
+              <img src="/img/surma.jpg" alt="Person 2" />
+            </div>
+
+            <div class="card__card-author__details">
+              <p class="card__card-author__details__name">Surma</p>
+              <time class="card__card-author__details__time">Jul 7, 2020</time>
+            </div>
+          </div>
+
+          <p class="card__card-body">
+            How many pixels are there <em>really</em> in a canvas ?
+          </p>
+
+          <div class="card__card-chips">
+            <a href="#" class="chip">DOM</a>
+            <a href="#" class="chip">JavaScript</a>
+            <a href="#" class="chip">Layout</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__cover-container">
+            <img src="/img/thumbnail.png" alt="Card 3 Cover" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            web.dev LIVE wrap-up
+          </a>
+
+          <div class="card__card-author">
+            <div class="card__card-author__details">
+              <time class="card__card-author__details__time">Jul 6, 2020</time>
+            </div>
+          </div>
+
+          <p class="card__card-body">
+            A summary of the major news and updates that were announced during
+            our 3-day online community event, and a reminder about upcoming
+            regional events.
+          </p>
+
+          <div class="card__card-chips">
+            <a href="#" class="chip">Web Vitals</a>
+            <a href="#" class="chip">Security</a>
+            <a href="#" class="chip">Capabilities</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn--blue-outline">See All Articles</a>
+    </section>
+
+    <!-- EXPLORE TOPICS  -->
+    <section class="topics-section section">
+      <h1 class="section-title">Explore Topics</h1>
+      <p class="section-body">
+        Learn more about a topic, and practice your skills with a hands-on
+        codelab.
+      </p>
+
+      <div class="grid grid--6">
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">1 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/web-vitals.svg" alt="Card 1 Cover" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Web Vitals
+          </a>
+
+          <p class="card__card-body">
+            Essential metrics for a healthy site
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">11 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/pwa.svg" alt="PWA" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Progressive Web Apps
+          </a>
+
+          <p class="card__card-body">
+            Websites that took all the right vitamins
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">12 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/accessible.svg" alt="Card 1 Cover" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Accessible to all
+          </a>
+
+          <p class="card__card-body">
+            Build a site that works for all of your users.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">50 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/fast.svg" alt="Fast" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Fast load times
+          </a>
+
+          <p class="card__card-body">
+            Guarantee your site loads quickly to avoid user drop off.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">11 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/reliable.svg" alt="Reliable" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Network reliablity
+          </a>
+
+          <p class="card__card-body">
+            See consistent, reliable performance regardless of network quality.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card__info-list">
+            <span class="card__info-list__collection">Collection</span>
+            <span class="card__info-list__resources">7 resource</span>
+          </div>
+
+          <div class="card__cover-container card__cover-container--bordered">
+            <img src="/img/secure.svg" alt="Card 1 Cover" />
+          </div>
+
+          <a href="#" class="card__card-title">
+            Safe and secure
+          </a>
+
+          <p class="card__card-body">
+            Ensure your site and users data is secure.
+          </p>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn--blue-outline">See All Topics</a>
+    </section>
+
+    <!-- SAVE PROGRESS -->
+    <section class="progress-section">
+      <div class="progress-section__wrapper section">
+        <h1 class="section-title">Save Your Progress</h1>
+        <p class="section-body">
+          See how your website performs over time, and keep track as you learn
+          on your own schedule.
+        </p>
+        <a href="#" class="btn btn--blue">Test My Site</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__nav__list">
+          <li class="footer__nav__list__item">
+            <h3 class="footer__nav__list__item__title">Contribute</h3>
+            <ul class="footer__nav__list__item__links">
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">File a bug</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">View source</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__nav__list__item">
+            <h3 class="footer__nav__list__item__title">Related content</h3>
+
+            <ul class="footer__nav__list__item__links">
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Updates</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Web Fundamentals</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Case Studies</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">DevWeb Content Firehose</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Podcasts</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__nav__list__item">
+            <h3 class="footer__nav__list__item__title">Connect</h3>
+
+            <ul class="footer__nav__list__item__links">
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Twitter</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">YouTube</a>
+              </li>
+              <li class="footer__nav__list__item__links__link">
+                <a href="#">Medium</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav-google-dev">
+        <ul class="footer__nav-google-dev__links">
+          <li class="footer__nav-google-dev__links__link">
+            <a href="#">
+              <img src="/img/lockup-color.png" alt="Google Developers" />
+            </a>
+          </li>
+          <li class="footer__nav-google-dev__links__link">
+            <a href="#">Chrome</a>
+          </li>
+          <li class="footer__nav-google-dev__links__link">
+            <a href="#">Firebase</a>
+          </li>
+          <li class="footer__nav-google-dev__links__link">
+            <a href="#">Google Cloud Platform</a>
+          </li>
+          <li class="footer__nav-google-dev__links__link">
+            <a href="#">All products</a>
+          </li>
+        </ul>
+
+        <select class="footer__nav-google-dev__select">
+          <option value="en">ENGLISH (en)</option>
+        </select>
+      </nav>
+
+      <nav class="footer__nav-conditions">
+        <ul class="footer__nav-conditions__links">
+          <li class="footer__nav-conditions__links__link">
+            <a href="#">Terms & Privacy</a>
+          </li>
+          <li class="footer__nav-conditions__links__link">
+            <a href="#">Community Guidelines</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="footer__license">
+        Except as otherwise noted, the content of this page is licensed under
+        the <a href="#">Creative Commons Attribution 4.0 License</a>, and code
+        samples are licensed under the <a href="#">Apache 2.0 License.</a> For
+        details, see the
+        <a href="#">Google Developers Site Policies.</a>
+      </p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

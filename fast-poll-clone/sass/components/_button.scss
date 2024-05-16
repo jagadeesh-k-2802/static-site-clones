@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 15px 18px;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  &--primary {
+    background-color: $green-color;
+    color: #fff;
+    transition: background 220ms;
+
+    &:hover {
+      background-color: darken($green-color, 10%);
+    }
+  }
+
+  &--transparent {
+    color: $light-grey-2;
+    background-color: transparent;
+  }
+
+  &--blue {
+    background-color: $blue-color;
+    color: #fff;
+    transition: background 220ms;
+
+    &:hover {
+      background-color: darken($blue-color, 6%);
+    }
+  }
+
+  &--orange {
+    background-color: $orange-color;
+    color: #fff;
+    transition: background 220ms;
+
+    &:hover {
+      background-color: darken($orange-color, 6%);
+    }
+  }
+}

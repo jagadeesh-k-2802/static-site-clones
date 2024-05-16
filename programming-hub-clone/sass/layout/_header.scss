@@ -1,0 +1,100 @@
+.hero-section {
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    height: 80px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.12);
+    display: flex;
+
+    @include respond(sm) {
+      height: 54px;
+    }
+
+    @include respond(md) {
+      height: 54px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__logo {
+        @extend %move-up-on-hover;
+
+        @include respond(sm) {
+          display: none;
+        }
+
+        @include respond(md) {
+          display: none;
+        }
+      }
+
+      &__logo-sm {
+        display: none;
+
+        @include respond(sm) {
+          display: block;
+        }
+
+        @include respond(md) {
+          display: block;
+        }
+      }
+
+      &__menu {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+
+        @include respond(sm) {
+          display: flex;
+        }
+      }
+
+      &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+
+        @include respond(sm) {
+          display: none;
+        }
+
+        @include respond(md) {
+          display: none;
+        }
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 5rem;
+          }
+
+          @extend %move-up-on-hover;
+
+          a {
+            display: inline-flex;
+            align-items: center;
+            color: #fff;
+            font-size: 1.6rem;
+
+            img,
+            svg {
+              height: 20px;
+              width: 20px;
+              margin-right: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

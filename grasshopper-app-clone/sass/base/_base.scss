@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+  font-family: 'GT America', Helvetica, arial, sans-serif;
+  color: #002c43;
+}
+
+a {
+  text-decoration: none;
+}

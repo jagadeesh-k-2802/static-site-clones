@@ -1,0 +1,65 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  padding: 12rem 0;
+  border-bottom: $section-end-border;
+  color: $font-color;
+
+  &__image {
+    display: flex;
+    margin-bottom: 2rem;
+
+    .image__quote-container {
+      border-radius: 50%;
+      background-color: $primary-color;
+      height: 7.3rem;
+      width: 7.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image__quote {
+      color: #fdfdfd;
+      font-size: 2.5rem;
+    }
+
+    .image__person {
+      width: 7.3rem;
+      margin-left: -1.7rem;
+      border-radius: 50%;
+      z-index: 5;
+    }
+  }
+
+  &__text {
+    @include logrocket-avenir(500);
+    font-size: 2.1rem;
+    text-align: center;
+    max-width: 50%;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .foot__person {
+      @include freight-sans(400);
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      line-height: 3.1rem;
+      margin-bottom: 2.6rem;
+    }
+
+    .foot__logo {
+      width: 6rem;
+    }
+  }
+}
