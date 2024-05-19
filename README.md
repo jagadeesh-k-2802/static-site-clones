@@ -8,7 +8,11 @@ This Repository Contains Static Clones of Popular Sites
 - SCSS
 - JavaScript
 
-## Sites 📄
+## Developing The Sites 🧑🏻‍💻
+- Use [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) VSCode Extension to compile SCSS into CSS
+- Use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode Extension to preview site with auto reload on change
+
+## Sites 🌐
 
 - [Apple Clone](https://github.com/jagadeesh-k-2802/static-site-clones/tree/main/apple-clone)
 - [BitPay Business](https://github.com/jagadeesh-k-2802/static-site-clones/tree/main/bitpay-business-clone)
@@ -28,4 +32,3 @@ This Repository Contains Static Clones of Popular Sites
 - [Upflow Clone](https://github.com/jagadeesh-k-2802/static-site-clones/tree/main/upflow-clone)
 - [Urbanized Bikes Clone](https://github.com/jagadeesh-k-2802/static-site-clones/tree/main/urbanized-bikes-clone)
 - [Web Dev Clone](https://github.com/jagadeesh-k-2802/static-site-clones/tree/main/web-dev-clone)
-  
