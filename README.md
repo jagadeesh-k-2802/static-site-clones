@@ -8,7 +8,7 @@ This Repository Contains Static Clones of Popular Sites
 - SCSS
 - JavaScript
 
-## Developing The Sites 🧑🏻‍💻
+## Development 🧑🏻‍💻
 - Use [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) VSCode Extension to compile SCSS into CSS
 - Use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode Extension to preview site with auto reload on change
 
